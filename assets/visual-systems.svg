@@ -1,0 +1,73 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: near black -->
+  <rect width="900" height="280" fill="#080A0D"/>
+
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="dgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#BFC3C7" stroke-width="0.12" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="280" fill="url(#dgrid)"/>
+
+  <!-- Section header -->
+  <text x="30" y="38" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="2" opacity="0.4">06  —  VISUAL SYSTEMS</text>
+  <text x="30" y="60" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="24" font-weight="900" fill="#F1EBDD" letter-spacing="2">/// VISUAL SYSTEMS</text>
+  <line x1="30" y1="68" x2="870" y2="68" stroke="#BFC3C7" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Description -->
+  <text x="30" y="90" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#BFC3C7" opacity="0.7">Where code meets image. The creative extension of the lab.</text>
+
+  <!-- Five discipline cards -->
+  <!-- FILM -->
+  <rect x="30" y="108" width="148" height="120" fill="none" stroke="#BFC3C7" stroke-width="0.5" opacity="0.2"/>
+  <rect x="30" y="108" width="148" height="3" fill="#315BC7"/>
+  <text x="40" y="132" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="2" opacity="0.4">DISCIPLINE.01</text>
+  <text x="40" y="155" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="15" font-weight="900" fill="#F1EBDD" letter-spacing="1">FILM</text>
+  <line x1="40" y1="162" x2="165" y2="162" stroke="#BFC3C7" stroke-width="0.3" opacity="0.15"/>
+  <text x="40" y="178" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Storytelling</text>
+  <text x="40" y="192" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Cinematography</text>
+  <text x="40" y="206" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Direction</text>
+  <!-- PHOTOGRAPHY -->
+  <rect x="192" y="108" width="148" height="120" fill="none" stroke="#BFC3C7" stroke-width="0.5" opacity="0.2"/>
+  <rect x="192" y="108" width="148" height="3" fill="#315BC7"/>
+  <text x="202" y="132" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="2" opacity="0.4">DISCIPLINE.02</text>
+  <text x="202" y="155" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="13" font-weight="900" fill="#F1EBDD" letter-spacing="1">PHOTO</text>
+  <line x1="202" y1="162" x2="327" y2="162" stroke="#BFC3C7" stroke-width="0.3" opacity="0.15"/>
+  <text x="202" y="178" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Composition</text>
+  <text x="202" y="192" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Visual framing</text>
+  <text x="202" y="206" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Light study</text>
+  <!-- VIDEO EDITING -->
+  <rect x="354" y="108" width="148" height="120" fill="none" stroke="#BFC3C7" stroke-width="0.5" opacity="0.2"/>
+  <rect x="354" y="108" width="148" height="3" fill="#F1EBDD" opacity="0.8"/>
+  <text x="364" y="132" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="2" opacity="0.4">DISCIPLINE.03</text>
+  <text x="364" y="155" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="13" font-weight="900" fill="#F1EBDD" letter-spacing="1">EDITING</text>
+  <line x1="364" y1="162" x2="489" y2="162" stroke="#BFC3C7" stroke-width="0.3" opacity="0.15"/>
+  <text x="364" y="178" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">DaVinci Resolve</text>
+  <text x="364" y="192" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Motion + sound</text>
+  <text x="364" y="206" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Post-production</text>
+  <!-- DESIGN -->
+  <rect x="516" y="108" width="148" height="120" fill="none" stroke="#BFC3C7" stroke-width="0.5" opacity="0.2"/>
+  <rect x="516" y="108" width="148" height="3" fill="#F1EBDD" opacity="0.8"/>
+  <text x="526" y="132" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="2" opacity="0.4">DISCIPLINE.04</text>
+  <text x="526" y="155" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="15" font-weight="900" fill="#F1EBDD" letter-spacing="1">DESIGN</text>
+  <line x1="526" y1="162" x2="651" y2="162" stroke="#BFC3C7" stroke-width="0.3" opacity="0.15"/>
+  <text x="526" y="178" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Adobe Suite</text>
+  <text x="526" y="192" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Visual identity</text>
+  <text x="526" y="206" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Editorial systems</text>
+  <!-- GENERATIVE -->
+  <rect x="678" y="108" width="192" height="120" fill="none" stroke="#BFC3C7" stroke-width="0.5" opacity="0.2"/>
+  <rect x="678" y="108" width="192" height="3" fill="#315BC7"/>
+  <text x="688" y="132" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="2" opacity="0.4">DISCIPLINE.05</text>
+  <text x="688" y="155" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="13" font-weight="900" fill="#F1EBDD" letter-spacing="1">GENERATIVE</text>
+  <line x1="688" y1="162" x2="857" y2="162" stroke="#BFC3C7" stroke-width="0.3" opacity="0.15"/>
+  <text x="688" y="178" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">AI x Creativity</text>
+  <text x="688" y="192" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Procedural media</text>
+  <text x="688" y="206" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#BFC3C7" opacity="0.55">Exploring</text>
+
+  <!-- Bottom -->
+  <text x="30" y="256" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8.5" fill="#BFC3C7" opacity="0.45" letter-spacing="1.5">The lab extends beyond code. Images, motion, and story are systems too.</text>
+
+  <!-- Bottom border -->
+  <line x1="0" y1="277" x2="900" y2="277" stroke="#BFC3C7" stroke-width="0.4" opacity="0.2"/>
+</svg>

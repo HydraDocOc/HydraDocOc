@@ -1,0 +1,73 @@
+<svg width="900" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: cream -->
+  <rect width="900" height="160" fill="#F1EBDD"/>
+
+  <!-- Top thick rule -->
+  <line x1="0" y1="0" x2="900" y2="0" stroke="#080A0D" stroke-width="3"/>
+
+  <!-- Wireframe globe ornament - left -->
+  <g transform="translate(80, 80)" opacity="0.12">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#080A0D" stroke-width="0.8"/>
+    <ellipse cx="0" cy="0" rx="50" ry="20" fill="none" stroke="#080A0D" stroke-width="0.5"/>
+    <ellipse cx="0" cy="0" rx="25" ry="50" fill="none" stroke="#080A0D" stroke-width="0.5"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#080A0D" stroke-width="0.5"/>
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#080A0D" stroke-width="0.5"/>
+  </g>
+
+  <!-- System status -->
+  <circle cx="165" cy="55" r="5" fill="#315BC7"/>
+  <text x="177" y="59" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#315BC7" letter-spacing="3">SYSTEM ONLINE</text>
+
+  <!-- Main footer line -->
+  <text x="165" y="92"
+        font-family="'Arial Black','Impact','Arial',sans-serif"
+        font-size="36"
+        font-weight="900"
+        fill="#080A0D"
+        letter-spacing="2">HYDRADocOc</text>
+
+  <!-- Divider -->
+  <line x1="165" y1="100" x2="870" y2="100" stroke="#BFC3C7" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Info row -->
+  <text x="165" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">INDIA</text>
+  <text x="220" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="0.5" opacity="0.3">  /  </text>
+  <text x="240" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">2026</text>
+  <text x="300" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="0.5" opacity="0.3">  /  </text>
+  <text x="320" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">COMPUTER SCIENCE</text>
+
+  <!-- Tagline -->
+  <text x="165" y="140" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="3" opacity="0.6">BUILD  /  LEARN  /  EXPLORE  /  REPEAT</text>
+
+  <!-- Barcode small - right -->
+  <g transform="translate(700, 60)" opacity="0.2">
+    <rect x="0" y="0" width="1.5" height="40" fill="#080A0D"/>
+    <rect x="3" y="0" width="1" height="40" fill="#080A0D"/>
+    <rect x="6" y="0" width="2.5" height="40" fill="#080A0D"/>
+    <rect x="10" y="0" width="1" height="40" fill="#080A0D"/>
+    <rect x="13" y="0" width="1.5" height="40" fill="#080A0D"/>
+    <rect x="17" y="0" width="3" height="40" fill="#080A0D"/>
+    <rect x="22" y="0" width="1" height="40" fill="#080A0D"/>
+    <rect x="25" y="0" width="2" height="40" fill="#080A0D"/>
+    <rect x="29" y="0" width="1" height="40" fill="#080A0D"/>
+    <rect x="32" y="0" width="2.5" height="40" fill="#080A0D"/>
+    <rect x="37" y="0" width="1" height="40" fill="#080A0D"/>
+    <rect x="40" y="0" width="2" height="40" fill="#080A0D"/>
+    <rect x="44" y="0" width="1" height="40" fill="#080A0D"/>
+    <rect x="47" y="0" width="3" height="40" fill="#080A0D"/>
+    <rect x="52" y="0" width="1.5" height="40" fill="#080A0D"/>
+    <rect x="56" y="0" width="1" height="40" fill="#080A0D"/>
+    <rect x="59" y="0" width="2" height="40" fill="#080A0D"/>
+    <text x="0" y="50" font-family="'IBM Plex Mono','Courier New',monospace" font-size="5" fill="#080A0D" letter-spacing="0.5">GH-HDL-2026</text>
+  </g>
+
+  <!-- Small technical cross right -->
+  <g transform="translate(840, 80)" opacity="0.25">
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="#080A0D" stroke-width="0.8"/>
+    <line x1="0" y1="-12" x2="0" y2="12" stroke="#080A0D" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="4" fill="none" stroke="#315BC7" stroke-width="0.7"/>
+  </g>
+
+  <!-- Bottom rule -->
+  <line x1="0" y1="158" x2="900" y2="158" stroke="#080A0D" stroke-width="1.5"/>
+</svg>

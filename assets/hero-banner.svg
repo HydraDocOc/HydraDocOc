@@ -1,0 +1,117 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Mono', 'Courier New', monospace">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#BFC3C7" stroke-width="0.3" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background: cream -->
+  <rect width="900" height="500" fill="#F1EBDD"/>
+  <rect width="900" height="500" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Top thick rule -->
+  <line x1="0" y1="0" x2="900" y2="0" stroke="#080A0D" stroke-width="3"/>
+  <line x1="0" y1="498" x2="900" y2="498" stroke="#080A0D" stroke-width="1.5"/>
+
+  <!-- Vertical rules -->
+  <line x1="60" y1="0" x2="60" y2="500" stroke="#BFC3C7" stroke-width="0.5" opacity="0.7"/>
+  <line x1="840" y1="0" x2="840" y2="500" stroke="#BFC3C7" stroke-width="0.5" opacity="0.7"/>
+
+  <!-- Top labels -->
+  <text x="20" y="22" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.6">SYS.01</text>
+  <text x="680" y="22" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="1.5" opacity="0.6">28.6139N  77.2090E</text>
+
+  <!-- Status indicator -->
+  <circle cx="78" cy="42" r="4" fill="#315BC7"/>
+  <text x="89" y="46" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="2">SYSTEM ONLINE</text>
+  <text x="800" y="46" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="1" opacity="0.5">v1.0.0</text>
+
+  <!-- Horizontal divider -->
+  <line x1="60" y1="55" x2="840" y2="55" stroke="#BFC3C7" stroke-width="0.5"/>
+
+  <!-- Wireframe globe - top right -->
+  <g transform="translate(770, 120)" opacity="0.18">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#080A0D" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="60" ry="25" fill="none" stroke="#080A0D" stroke-width="0.7"/>
+    <ellipse cx="0" cy="0" rx="60" ry="45" fill="none" stroke="#080A0D" stroke-width="0.5"/>
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#080A0D" stroke-width="0.7"/>
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="#080A0D" stroke-width="0.7"/>
+    <ellipse cx="0" cy="0" rx="30" ry="60" fill="none" stroke="#080A0D" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#315BC7" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- Geometric circle ornament - left -->
+  <circle cx="110" cy="220" r="50" fill="none" stroke="#BFC3C7" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="110" cy="220" r="35" fill="none" stroke="#BFC3C7" stroke-width="0.4" opacity="0.4"/>
+  <circle cx="110" cy="220" r="4" fill="#315BC7" opacity="0.7"/>
+  <line x1="110" y1="170" x2="110" y2="270" stroke="#BFC3C7" stroke-width="0.4" opacity="0.5"/>
+  <line x1="60" y1="220" x2="160" y2="220" stroke="#BFC3C7" stroke-width="0.4" opacity="0.5"/>
+
+  <!-- MAIN TITLE: HYDRA -->
+  <text x="175" y="208"
+        font-family="'Arial Black','Impact','Arial',sans-serif"
+        font-size="145"
+        font-weight="900"
+        fill="#080A0D"
+        letter-spacing="-4">HYDRA</text>
+
+  <!-- Secondary line -->
+  <text x="178" y="248"
+        font-family="'IBM Plex Mono','Courier New',monospace"
+        font-size="19"
+        fill="#315BC7"
+        letter-spacing="6">// DIGITAL LAB</text>
+
+  <!-- Thin rule -->
+  <line x1="178" y1="260" x2="690" y2="260" stroke="#BFC3C7" stroke-width="0.7"/>
+
+  <!-- Tagline -->
+  <text x="178" y="290"
+        font-family="'IBM Plex Mono','Courier New',monospace"
+        font-size="10"
+        fill="#080A0D"
+        letter-spacing="3"
+        opacity="0.7">CODE  x  AI  x  DESIGN  x  FILM</text>
+
+  <!-- Descriptor labels -->
+  <text x="178" y="326" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8.5" fill="#080A0D" letter-spacing="3" opacity="0.55">ARTIFICIAL INTELLIGENCE</text>
+  <text x="178" y="343" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8.5" fill="#080A0D" letter-spacing="3" opacity="0.55">SOFTWARE SYSTEMS</text>
+  <text x="178" y="360" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8.5" fill="#080A0D" letter-spacing="3" opacity="0.55">VISUAL EXPERIMENTATION</text>
+  <text x="178" y="377" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8.5" fill="#080A0D" letter-spacing="3" opacity="0.55">INDIA  /  2026</text>
+
+  <!-- Barcode -->
+  <g transform="translate(560, 315)" opacity="0.3">
+    <rect x="0" y="0" width="2" height="55" fill="#080A0D"/>
+    <rect x="4" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="7" y="0" width="3" height="55" fill="#080A0D"/>
+    <rect x="12" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="15" y="0" width="2" height="55" fill="#080A0D"/>
+    <rect x="19" y="0" width="4" height="55" fill="#080A0D"/>
+    <rect x="25" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="28" y="0" width="3" height="55" fill="#080A0D"/>
+    <rect x="33" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="36" y="0" width="2" height="55" fill="#080A0D"/>
+    <rect x="40" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="43" y="0" width="3" height="55" fill="#080A0D"/>
+    <rect x="48" y="0" width="2" height="55" fill="#080A0D"/>
+    <rect x="52" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="55" y="0" width="4" height="55" fill="#080A0D"/>
+    <rect x="61" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="64" y="0" width="2" height="55" fill="#080A0D"/>
+    <rect x="68" y="0" width="1" height="55" fill="#080A0D"/>
+    <rect x="71" y="0" width="3" height="55" fill="#080A0D"/>
+    <rect x="76" y="0" width="2" height="55" fill="#080A0D"/>
+    <text x="0" y="68" font-family="'IBM Plex Mono','Courier New',monospace" font-size="6" fill="#080A0D" letter-spacing="1">HDL-2026-01</text>
+  </g>
+
+  <!-- Technical cross ornament -->
+  <g transform="translate(695, 385)" opacity="0.3">
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#080A0D" stroke-width="0.8"/>
+    <line x1="0" y1="-15" x2="0" y2="15" stroke="#080A0D" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#315BC7" stroke-width="0.8"/>
+  </g>
+
+  <!-- Bottom metadata -->
+  <text x="20" y="487" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#080A0D" letter-spacing="2" opacity="0.5">HYDRA // DIGITAL LAB  -  DHAWAL GOYAL  -  HydraDocOc  -  INDIA</text>
+  <text x="756" y="487" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#080A0D" letter-spacing="1" opacity="0.5">2026.10</text>
+</svg>

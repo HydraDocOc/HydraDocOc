@@ -1,0 +1,92 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: near black -->
+  <rect width="900" height="280" fill="#080A0D"/>
+
+  <!-- Subtle technical grid -->
+  <defs>
+    <pattern id="darkgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#BFC3C7" stroke-width="0.15" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="280" fill="url(#darkgrid)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="4" height="280" fill="#315BC7"/>
+
+  <!-- Right accent bar -->
+  <rect x="896" y="0" width="4" height="280" fill="#315BC7"/>
+
+  <!-- Section label -->
+  <text x="30" y="35" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="3" opacity="0.5">02  —  IDENTITY</text>
+
+  <!-- Horizontal divider -->
+  <line x1="30" y1="44" x2="870" y2="44" stroke="#BFC3C7" stroke-width="0.4" opacity="0.2"/>
+
+  <!-- Name: DHAWAL GOYAL -->
+  <text x="30" y="120"
+        font-family="'Arial Black','Impact','Arial',sans-serif"
+        font-size="70"
+        font-weight="900"
+        fill="#F1EBDD"
+        letter-spacing="-1">DHAWAL GOYAL</text>
+
+  <!-- Handle -->
+  <text x="32" y="150"
+        font-family="'IBM Plex Mono','Courier New',monospace"
+        font-size="14"
+        fill="#315BC7"
+        letter-spacing="4">HydraDocOc</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="162" x2="500" y2="162" stroke="#BFC3C7" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Role descriptor -->
+  <text x="32" y="183"
+        font-family="'IBM Plex Mono','Courier New',monospace"
+        font-size="10"
+        fill="#BFC3C7"
+        letter-spacing="2"
+        opacity="0.75">Developer  /  AI-ML Enthusiast  /  Visual Creator  /  Filmmaker</text>
+
+  <!-- Description -->
+  <text x="32" y="205"
+        font-family="'IBM Plex Mono','Courier New',monospace"
+        font-size="11"
+        fill="#F1EBDD"
+        letter-spacing="0.5"
+        opacity="0.9">Building intelligent systems with a visual mind.</text>
+
+  <!-- Spec panel - right column -->
+  <line x1="570" y1="55" x2="570" y2="260" stroke="#BFC3C7" stroke-width="0.4" opacity="0.2"/>
+
+  <text x="590" y="80" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#BFC3C7" letter-spacing="2" opacity="0.4">SPECIFICATION PANEL</text>
+
+  <text x="590" y="108" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" letter-spacing="2" opacity="0.5">LOCATION</text>
+  <text x="700" y="108" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#F1EBDD" letter-spacing="1">INDIA</text>
+
+  <line x1="590" y1="116" x2="870" y2="116" stroke="#BFC3C7" stroke-width="0.2" opacity="0.15"/>
+
+  <text x="590" y="135" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" letter-spacing="2" opacity="0.5">FIELD</text>
+  <text x="700" y="135" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#F1EBDD" letter-spacing="1">COMPUTER SCIENCE</text>
+
+  <line x1="590" y1="143" x2="870" y2="143" stroke="#BFC3C7" stroke-width="0.2" opacity="0.15"/>
+
+  <text x="590" y="162" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" letter-spacing="2" opacity="0.5">FOCUS</text>
+  <text x="700" y="162" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#F1EBDD" letter-spacing="1">AI / ML / SOFTWARE</text>
+
+  <line x1="590" y1="170" x2="870" y2="170" stroke="#BFC3C7" stroke-width="0.2" opacity="0.15"/>
+
+  <text x="590" y="189" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" letter-spacing="2" opacity="0.5">CREATIVE</text>
+  <text x="700" y="189" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#F1EBDD" letter-spacing="1">FILM / EDITING / DESIGN</text>
+
+  <line x1="590" y1="197" x2="870" y2="197" stroke="#BFC3C7" stroke-width="0.2" opacity="0.15"/>
+
+  <text x="590" y="216" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" letter-spacing="2" opacity="0.5">STATUS</text>
+  <circle cx="701" cy="211" r="3.5" fill="#315BC7"/>
+  <text x="710" y="216" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#315BC7" letter-spacing="1">BUILDING</text>
+
+  <!-- Corner dot ornament -->
+  <circle cx="860" cy="260" r="3" fill="#315BC7" opacity="0.5"/>
+  <circle cx="850" cy="260" r="2" fill="#BFC3C7" opacity="0.3"/>
+  <circle cx="842" cy="260" r="1.5" fill="#BFC3C7" opacity="0.2"/>
+</svg>

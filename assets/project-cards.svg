@@ -1,0 +1,152 @@
+<svg width="900" height="640" viewBox="0 0 900 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="cgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#BFC3C7" stroke-width="0.2" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Background cream -->
+  <rect width="900" height="640" fill="#F1EBDD"/>
+  <rect width="900" height="640" fill="url(#cgrid)"/>
+
+  <!-- Section header -->
+  <text x="30" y="38" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">03  —  SELECTED SYSTEMS</text>
+  <text x="30" y="60"
+        font-family="'Arial Black','Impact','Arial',sans-serif"
+        font-size="24"
+        font-weight="900"
+        fill="#080A0D"
+        letter-spacing="2">/// SELECTED SYSTEMS</text>
+  <line x1="30" y1="68" x2="870" y2="68" stroke="#080A0D" stroke-width="0.8"/>
+
+  <!-- ========================== CARD 01 ========================== -->
+  <!-- Card 01 background -->
+  <rect x="30" y="85" width="410" height="245" fill="#080A0D"/>
+  <!-- Card 01 accent -->
+  <rect x="30" y="85" width="3" height="245" fill="#315BC7"/>
+  <!-- Card 01 number -->
+  <text x="46" y="115" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" letter-spacing="3" opacity="0.4">01</text>
+  <!-- Card 01 title -->
+  <text x="46" y="148" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="20" font-weight="900" fill="#F1EBDD" letter-spacing="0.5">GEMINI PDF CHATBOT</text>
+  <!-- Card 01 divider -->
+  <line x1="46" y1="158" x2="420" y2="158" stroke="#BFC3C7" stroke-width="0.3" opacity="0.2"/>
+  <!-- Card 01 description -->
+  <text x="46" y="177" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" opacity="0.8">Conversational AI system that processes PDF</text>
+  <text x="46" y="191" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" opacity="0.8">documents and answers natural language queries</text>
+  <text x="46" y="205" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" opacity="0.8">using Google Gemini's LLM capabilities.</text>
+  <!-- Tech tags -->
+  <rect x="46" y="218" width="60" height="16" fill="none" stroke="#315BC7" stroke-width="0.7"/>
+  <text x="50" y="230" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#315BC7" letter-spacing="0.5">Python</text>
+  <rect x="114" y="218" width="72" height="16" fill="none" stroke="#315BC7" stroke-width="0.7"/>
+  <text x="118" y="230" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#315BC7" letter-spacing="0.5">LangChain</text>
+  <rect x="194" y="218" width="64" height="16" fill="none" stroke="#315BC7" stroke-width="0.7"/>
+  <text x="198" y="230" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#315BC7" letter-spacing="0.5">Gemini AI</text>
+  <!-- Progress bar -->
+  <text x="46" y="255" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#BFC3C7" letter-spacing="2" opacity="0.4">COMPLETION</text>
+  <rect x="120" y="248" width="160" height="3" fill="#BFC3C7" opacity="0.15"/>
+  <rect x="120" y="248" width="128" height="3" fill="#315BC7" opacity="0.8"/>
+  <!-- Status -->
+  <circle cx="46" cy="306" r="4" fill="#315BC7"/>
+  <text x="56" y="310" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="2">ACTIVE</text>
+  <!-- Metadata -->
+  <text x="300" y="310" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#BFC3C7" opacity="0.3" letter-spacing="1">2026  /  AI</text>
+  <!-- Geometric thumbnail -->
+  <circle cx="380" cy="175" r="40" fill="none" stroke="#BFC3C7" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="380" cy="175" r="25" fill="none" stroke="#315BC7" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="380" cy="175" r="10" fill="#315BC7" opacity="0.15"/>
+  <line x1="350" y1="175" x2="410" y2="175" stroke="#BFC3C7" stroke-width="0.4" opacity="0.2"/>
+  <line x1="380" y1="145" x2="380" y2="205" stroke="#BFC3C7" stroke-width="0.4" opacity="0.2"/>
+
+  <!-- ========================== CARD 02 ========================== -->
+  <rect x="460" y="85" width="410" height="245" fill="#080A0D"/>
+  <rect x="460" y="85" width="3" height="245" fill="#315BC7"/>
+  <text x="476" y="115" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" letter-spacing="3" opacity="0.4">02</text>
+  <text x="476" y="148" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="20" font-weight="900" fill="#F1EBDD" letter-spacing="0.5">HIREHUB</text>
+  <line x1="476" y1="158" x2="850" y2="158" stroke="#BFC3C7" stroke-width="0.3" opacity="0.2"/>
+  <text x="476" y="177" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" opacity="0.8">Web platform for job discovery with integrated</text>
+  <text x="476" y="191" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" opacity="0.8">resume builder functionality. Built using external</text>
+  <text x="476" y="205" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#BFC3C7" opacity="0.8">APIs for live job data and resume generation.</text>
+  <!-- Tech tags -->
+  <rect x="476" y="218" width="50" height="16" fill="none" stroke="#315BC7" stroke-width="0.7"/>
+  <text x="480" y="230" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#315BC7">HTML</text>
+  <rect x="534" y="218" width="60" height="16" fill="none" stroke="#315BC7" stroke-width="0.7"/>
+  <text x="538" y="230" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#315BC7">CSS / JS</text>
+  <rect x="602" y="218" width="56" height="16" fill="none" stroke="#315BC7" stroke-width="0.7"/>
+  <text x="606" y="230" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#315BC7">REST API</text>
+  <!-- Progress bar -->
+  <text x="476" y="255" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#BFC3C7" letter-spacing="2" opacity="0.4">COMPLETION</text>
+  <rect x="550" y="248" width="160" height="3" fill="#BFC3C7" opacity="0.15"/>
+  <rect x="550" y="248" width="148" height="3" fill="#315BC7" opacity="0.8"/>
+  <!-- Status -->
+  <circle cx="476" cy="306" r="4" fill="#315BC7"/>
+  <text x="486" y="310" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="2">ACTIVE</text>
+  <text x="730" y="310" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#BFC3C7" opacity="0.3" letter-spacing="1">2025  /  WEB</text>
+  <!-- Geometric thumbnail -->
+  <rect x="790" y="140" width="55" height="55" fill="none" stroke="#BFC3C7" stroke-width="0.5" opacity="0.15"/>
+  <rect x="800" y="150" width="35" height="35" fill="none" stroke="#315BC7" stroke-width="0.5" opacity="0.3"/>
+  <line x1="817" y1="140" x2="817" y2="195" stroke="#BFC3C7" stroke-width="0.4" opacity="0.2"/>
+  <line x1="790" y1="167" x2="845" y2="167" stroke="#BFC3C7" stroke-width="0.4" opacity="0.2"/>
+
+  <!-- ========================== CARD 03 ========================== -->
+  <rect x="30" y="348" width="410" height="245" fill="#F1EBDD"/>
+  <rect x="30" y="348" width="3" height="245" fill="#080A0D"/>
+  <!-- Thin border -->
+  <rect x="30" y="348" width="410" height="245" fill="none" stroke="#BFC3C7" stroke-width="0.8"/>
+  <text x="46" y="378" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="3" opacity="0.4">03</text>
+  <text x="46" y="411" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="20" font-weight="900" fill="#080A0D" letter-spacing="0.5">AERO VELOCITY</text>
+  <line x1="46" y1="421" x2="420" y2="421" stroke="#080A0D" stroke-width="0.3" opacity="0.2"/>
+  <text x="46" y="440" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" opacity="0.75">Python-based project for flight dynamics and</text>
+  <text x="46" y="454" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" opacity="0.75">velocity analysis. Computational simulation of</text>
+  <text x="46" y="468" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" opacity="0.75">aeronautical data systems.</text>
+  <!-- Tech tags -->
+  <rect x="46" y="481" width="60" height="16" fill="none" stroke="#080A0D" stroke-width="0.7"/>
+  <text x="50" y="493" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#080A0D">Python</text>
+  <rect x="114" y="481" width="80" height="16" fill="none" stroke="#080A0D" stroke-width="0.7"/>
+  <text x="118" y="493" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#080A0D">Data Science</text>
+  <!-- Progress bar -->
+  <text x="46" y="515" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#080A0D" letter-spacing="2" opacity="0.4">COMPLETION</text>
+  <rect x="120" y="508" width="160" height="3" fill="#BFC3C7" opacity="0.4"/>
+  <rect x="120" y="508" width="108" height="3" fill="#080A0D" opacity="0.6"/>
+  <!-- Status -->
+  <circle cx="46" cy="570" r="3" fill="none" stroke="#080A0D" stroke-width="1"/>
+  <text x="56" y="574" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.7">EXPERIMENT</text>
+  <text x="290" y="574" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#080A0D" opacity="0.3" letter-spacing="1">2025  /  PYTHON</text>
+  <!-- Geometric thumbnail -->
+  <path d="M380,440 L410,480 L350,480 Z" fill="none" stroke="#BFC3C7" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="380" cy="460" r="10" fill="none" stroke="#080A0D" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- ========================== CARD 04 ========================== -->
+  <rect x="460" y="348" width="410" height="245" fill="#F1EBDD"/>
+  <rect x="460" y="348" width="3" height="245" fill="#080A0D"/>
+  <rect x="460" y="348" width="410" height="245" fill="none" stroke="#BFC3C7" stroke-width="0.8"/>
+  <text x="476" y="378" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="3" opacity="0.4">04</text>
+  <text x="476" y="411" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="18" font-weight="900" fill="#080A0D" letter-spacing="0.5">MERN STACK PROJECT</text>
+  <line x1="476" y1="421" x2="850" y2="421" stroke="#080A0D" stroke-width="0.3" opacity="0.2"/>
+  <text x="476" y="440" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" opacity="0.75">Full-stack web application built with the MERN</text>
+  <text x="476" y="454" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" opacity="0.75">stack. Explores MongoDB, Express, React and</text>
+  <text x="476" y="468" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" opacity="0.75">Node.js for end-to-end web development.</text>
+  <!-- Tech tags -->
+  <rect x="476" y="481" width="70" height="16" fill="none" stroke="#080A0D" stroke-width="0.7"/>
+  <text x="480" y="493" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#080A0D">MongoDB</text>
+  <rect x="554" y="481" width="52" height="16" fill="none" stroke="#080A0D" stroke-width="0.7"/>
+  <text x="558" y="493" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#080A0D">React</text>
+  <rect x="614" y="481" width="66" height="16" fill="none" stroke="#080A0D" stroke-width="0.7"/>
+  <text x="618" y="493" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7.5" fill="#080A0D">Node.js</text>
+  <!-- Progress bar -->
+  <text x="476" y="515" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#080A0D" letter-spacing="2" opacity="0.4">COMPLETION</text>
+  <rect x="550" y="508" width="160" height="3" fill="#BFC3C7" opacity="0.4"/>
+  <rect x="550" y="508" width="140" height="3" fill="#080A0D" opacity="0.6"/>
+  <!-- Status -->
+  <circle cx="476" cy="570" r="3" fill="none" stroke="#080A0D" stroke-width="1"/>
+  <text x="486" y="574" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.7">EXPERIMENT</text>
+  <text x="710" y="574" font-family="'IBM Plex Mono','Courier New',monospace" font-size="7" fill="#080A0D" opacity="0.3" letter-spacing="1">2026  /  WEB</text>
+  <!-- Geometric thumbnail -->
+  <rect x="798" y="440" width="50" height="35" fill="none" stroke="#BFC3C7" stroke-width="0.6" opacity="0.3"/>
+  <line x1="798" y1="457" x2="848" y2="457" stroke="#080A0D" stroke-width="0.4" opacity="0.2"/>
+  <rect x="803" y="444" width="10" height="10" fill="none" stroke="#080A0D" stroke-width="0.4" opacity="0.2"/>
+  <rect x="820" y="444" width="10" height="10" fill="none" stroke="#080A0D" stroke-width="0.4" opacity="0.2"/>
+  <rect x="837" y="444" width="7" height="10" fill="none" stroke="#080A0D" stroke-width="0.4" opacity="0.2"/>
+
+  <!-- Bottom border -->
+  <line x1="0" y1="638" x2="900" y2="638" stroke="#BFC3C7" stroke-width="0.5" opacity="0.3"/>
+</svg>
