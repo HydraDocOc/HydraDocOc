@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<img src="./assets/hero-banner.svg" width="900" alt="HYDRA // DIGITAL LAB — Dhawal Goyal"/>
+<img src="./assets/hero.svg" width="900" alt="DHAWAL GOYAL // DIGITAL LAB &amp; SYSTEM REPOSITORY"/>
 
 </div>
 
@@ -16,15 +16,7 @@
 
 <div align="center">
 
-<img src="./assets/identity-panel.svg" width="900" alt="Identity — Dhawal Goyal / HydraDocOc"/>
-
-</div>
-
----
-
-<div align="center">
-
-<img src="./assets/project-cards.svg" width="900" alt="Selected Systems — Projects"/>
+<img src="./assets/projects.svg" width="900" alt="Selected Systems — Projects"/>
 
 </div>
 
@@ -221,7 +213,7 @@
 
 <div align="center">
 
-<img src="./assets/tech-and-building.svg" width="900" alt="Tech Index and Currently Building"/>
+<img src="./assets/tech.svg" width="900" alt="Technical Compendium &amp; Capability Matrix"/>
 
 </div>
 
@@ -229,7 +221,7 @@
 
 <div align="center">
 
-<img src="./assets/visual-systems.svg" width="900" alt="Visual Systems — Creative Work"/>
+<img src="./assets/activity.svg" width="900" alt="Visual Systems &amp; Creative Media"/>
 
 </div>
 
@@ -237,7 +229,7 @@
 
 <div align="center">
 
-<img src="./assets/footer.svg" width="900" alt="Footer — System Online"/>
+<img src="./assets/footer.svg" width="900" alt="Colophon — Hydra Digital Lab"/>
 
 </div>
 

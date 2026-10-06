@@ -1,0 +1,289 @@
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Architectural grid -->
+    <pattern id="editorial-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0A0D12" stroke-width="0.25" opacity="0.08"/>
+    </pattern>
+
+    <!-- CSS Animation Fallback & Styling -->
+    <style>
+      @keyframes orbit-cw-10 {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes orbit-ccw-16 {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes orbit-cw-22 {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes sweep-8 {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulse-slow {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+      }
+      .anim-orbit-inner {
+        transform-origin: 0px 0px;
+        animation: orbit-cw-10 10s linear infinite;
+      }
+      .anim-orbit-mid {
+        transform-origin: 0px 0px;
+        animation: orbit-ccw-16 16s linear infinite;
+      }
+      .anim-orbit-outer {
+        transform-origin: 0px 0px;
+        animation: orbit-cw-22 22s linear infinite;
+      }
+      .anim-sweep {
+        transform-origin: 0px 0px;
+        animation: sweep-8 8s linear infinite;
+      }
+      .anim-pulse {
+        animation: pulse-slow 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Cream editorial background -->
+  <rect width="900" height="480" fill="#F0EAE1"/>
+  <rect width="900" height="480" fill="url(#editorial-grid)"/>
+
+  <!-- Outer perimeter framing & crop marks -->
+  <line x1="32" y1="20" x2="868" y2="20" stroke="#0A0D12" stroke-width="1.2"/>
+  <line x1="32" y1="460" x2="868" y2="460" stroke="#0A0D12" stroke-width="1.2"/>
+  <line x1="32" y1="20" x2="32" y2="460" stroke="#0A0D12" stroke-width="0.5" opacity="0.4"/>
+  <line x1="868" y1="20" x2="868" y2="460" stroke="#0A0D12" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Corner registration crosshairs -->
+  <g stroke="#0A0D12" stroke-width="0.6" opacity="0.6">
+    <line x1="26" y1="20" x2="38" y2="20"/>
+    <line x1="32" y1="14" x2="32" y2="26"/>
+    <line x1="862" y1="20" x2="874" y2="20"/>
+    <line x1="868" y1="14" x2="868" y2="26"/>
+    <line x1="26" y1="460" x2="38" y2="460"/>
+    <line x1="32" y1="454" x2="32" y2="466"/>
+    <line x1="862" y1="460" x2="874" y2="460"/>
+    <line x1="868" y1="454" x2="868" y2="466"/>
+  </g>
+
+  <!-- Top editorial masthead bar -->
+  <text x="44" y="38" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="600" fill="#0A0D12" letter-spacing="2">FOLIO // 01</text>
+  <text x="140" y="38" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">DHAWAL GOYAL · DIGITAL LAB / 2026</text>
+  <text x="760" y="38" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="600" fill="#0A0D12" letter-spacing="1.5">INDIA // 2026</text>
+
+  <!-- Sub-masthead hairline rule -->
+  <line x1="32" y1="48" x2="868" y2="48" stroke="#0A0D12" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Technical scale ruler ticks -->
+  <g stroke="#0A0D12" stroke-width="0.4" opacity="0.4">
+    <line x1="32" y1="52" x2="32" y2="58"/>
+    <line x1="132" y1="52" x2="132" y2="56"/>
+    <line x1="232" y1="52" x2="232" y2="56"/>
+    <line x1="332" y1="52" x2="332" y2="56"/>
+    <line x1="432" y1="52" x2="432" y2="56"/>
+    <line x1="532" y1="52" x2="532" y2="56"/>
+    <line x1="632" y1="52" x2="632" y2="56"/>
+    <line x1="732" y1="52" x2="732" y2="56"/>
+    <line x1="832" y1="52" x2="832" y2="56"/>
+    <line x1="868" y1="52" x2="868" y2="58"/>
+  </g>
+
+  <!-- Left index tag with subtle micro-pulsing indicator -->
+  <g transform="translate(44, 76)">
+    <circle cx="4" cy="4" r="3.5" fill="#1E40AF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="14" y="7" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="600" fill="#1E40AF" letter-spacing="2">SYS · ARCHITECTURE // 2026</text>
+  </g>
+
+  <!-- ===================================================================
+       PRIMARY IDENTITY & HERO TYPOGRAPHY
+       =================================================================== -->
+
+  <!-- Primary Human Identity: DHAWAL GOYAL (Dominant Title) -->
+  <text x="42" y="152"
+        font-family="'Arial Black','Impact','Helvetica Neue',sans-serif"
+        font-size="64"
+        font-weight="900"
+        fill="#0A0D12"
+        letter-spacing="-2.5">DHAWAL GOYAL</text>
+
+  <!-- Subtitle: // DIGITAL LAB & SYSTEM REPOSITORY -->
+  <text x="44" y="180"
+        font-family="'IBM Plex Mono','SF Mono',Consolas,monospace"
+        font-size="14.5"
+        font-weight="700"
+        fill="#1E40AF"
+        letter-spacing="3.5">// DIGITAL LAB &amp; SYSTEM REPOSITORY</text>
+
+  <!-- Professional Role: SOFTWARE DEVELOPER & VISUAL CREATIVE -->
+  <text x="44" y="206"
+        font-family="'IBM Plex Mono','SF Mono',Consolas,monospace"
+        font-size="10.5"
+        font-weight="700"
+        fill="#0A0D12"
+        letter-spacing="1.5">SOFTWARE DEVELOPER &amp; VISUAL CREATIVE</text>
+
+  <!-- Secondary Metadata: @HydraDocOc (Visually Small) -->
+  <text x="44" y="226"
+        font-family="'IBM Plex Mono','SF Mono',Consolas,monospace"
+        font-size="9.5"
+        font-weight="600"
+        fill="#1E40AF"
+        letter-spacing="2">@HydraDocOc<tspan font-weight="400" fill="#0A0D12" opacity="0.4" letter-spacing="1"> · github.com/HydraDocOc</tspan></text>
+
+  <!-- Editorial hairline rule -->
+  <line x1="44" y1="240" x2="520" y2="240" stroke="#0A0D12" stroke-width="0.6" opacity="0.3"/>
+
+  <!-- Short Guiding Description -->
+  <text x="44" y="264"
+        font-family="'IBM Plex Mono','SF Mono',Consolas,monospace"
+        font-size="9.5"
+        fill="#0A0D12"
+        letter-spacing="0.4"
+        opacity="0.9">Building intelligent, verifiable software systems with a visual mind.</text>
+  <text x="44" y="280"
+        font-family="'IBM Plex Mono','SF Mono',Consolas,monospace"
+        font-size="9.5"
+        fill="#0A0D12"
+        letter-spacing="0.4"
+        opacity="0.9">Applied machine learning, end-to-end web architectures, and cinematic visual systems.</text>
+
+  <!-- Three Core Axes -->
+  <g transform="translate(44, 320)">
+    <text x="0" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" font-weight="700" fill="#1E40AF" letter-spacing="2">CORE AXIS 01</text>
+    <text x="0" y="14" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8.5" font-weight="600" fill="#0A0D12" opacity="0.9">Applied AI &amp; Retrieval</text>
+    <text x="0" y="27" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" fill="#0A0D12" opacity="0.5">LangChain · Gemini · Vector Search</text>
+
+    <text x="165" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" font-weight="700" fill="#1E40AF" letter-spacing="2">CORE AXIS 02</text>
+    <text x="165" y="14" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8.5" font-weight="600" fill="#0A0D12" opacity="0.9">Full-Stack Web Systems</text>
+    <text x="165" y="27" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" fill="#0A0D12" opacity="0.5">FastAPI · React · Flask · Django</text>
+
+    <text x="330" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" font-weight="700" fill="#1E40AF" letter-spacing="2">CORE AXIS 03</text>
+    <text x="330" y="14" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8.5" font-weight="600" fill="#0A0D12" opacity="0.9">Visual Media &amp; Film</text>
+    <text x="330" y="27" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" fill="#0A0D12" opacity="0.5">Cinematography · Editorial · Motion</text>
+  </g>
+
+  <!-- ===================================================================
+       RIGHT PANEL: SOPHISTICATED ANIMATED ORBITAL NODE SPHERE
+       =================================================================== -->
+  <g transform="translate(710, 240)">
+    <!-- Static Framework & Calibration Coordinates -->
+    <circle cx="0" cy="0" r="124" fill="none" stroke="#0A0D12" stroke-width="0.35" stroke-dasharray="2,4" opacity="0.25"/>
+    <circle cx="0" cy="0" r="98" fill="none" stroke="#0A0D12" stroke-width="0.6" opacity="0.35"/>
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#0A0D12" stroke-width="0.4" opacity="0.2"/>
+
+    <!-- Hairline Axes -->
+    <line x1="-135" y1="0" x2="135" y2="0" stroke="#0A0D12" stroke-width="0.4" opacity="0.3"/>
+    <line x1="0" y1="-135" x2="0" y2="135" stroke="#0A0D12" stroke-width="0.4" opacity="0.3"/>
+
+    <!-- 45-degree Angle Marks -->
+    <line x1="-8" y1="-8" x2="8" y2="8" stroke="#0A0D12" stroke-width="0.5" opacity="0.4"/>
+    <line x1="-8" y1="8" x2="8" y2="-8" stroke="#0A0D12" stroke-width="0.5" opacity="0.4"/>
+
+    <!-- Micro-Scanning Sweep Line (Slow 8s rotation) -->
+    <g class="anim-sweep">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      <line x1="0" y1="0" x2="118" y2="0" stroke="#1E40AF" stroke-width="0.5" opacity="0.25"/>
+      <circle cx="118" cy="0" r="1.5" fill="#1E40AF" opacity="0.4"/>
+    </g>
+
+    <!-- ORBIT 3: Outer Elliptical Orbit (Slowest: 22s rotation) -->
+    <g transform="rotate(-30)">
+      <!-- Static Orbit Ellipse Path -->
+      <ellipse cx="0" cy="0" rx="112" ry="46" fill="none" stroke="#0A0D12" stroke-width="0.6" stroke-dasharray="5,4" opacity="0.35"/>
+      <!-- Rotating Node System -->
+      <g class="anim-orbit-outer">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+        <!-- Node D: Cobalt Outer Node -->
+        <circle cx="112" cy="0" r="3.5" fill="#1E40AF"/>
+        <!-- Node E: Dark Perimeter Node -->
+        <circle cx="-112" cy="0" r="2.5" fill="#0A0D12"/>
+        <!-- Traveling Particle -->
+        <circle cx="56" cy="-40" r="1.5" fill="#1E40AF" opacity="0.75"/>
+      </g>
+    </g>
+
+    <!-- ORBIT 2: Middle Elliptical Orbit (Medium: 16s counter-rotation) -->
+    <g transform="rotate(35)">
+      <!-- Static Orbit Ellipse Path -->
+      <ellipse cx="0" cy="0" rx="80" ry="34" fill="none" stroke="#0A0D12" stroke-width="0.7" opacity="0.45"/>
+      <!-- Counter-Rotating Node System -->
+      <g class="anim-orbit-mid">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
+        <!-- Node B: Dark Node -->
+        <circle cx="80" cy="0" r="3" fill="#0A0D12"/>
+        <!-- Node C: Cobalt Node -->
+        <circle cx="-80" cy="0" r="2.5" fill="#1E40AF"/>
+        <!-- Micro-Particle -->
+        <circle cx="0" cy="34" r="1.6" fill="#60A5FA"/>
+      </g>
+    </g>
+
+    <!-- ORBIT 1: Inner Circular Orbit (Fastest: 10s rotation) -->
+    <!-- Static Orbit Ring -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1E40AF" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.6"/>
+    <!-- Rotating Inner Nodes -->
+    <g class="anim-orbit-inner">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+      <!-- Node A: Cobalt Node with gentle pulse -->
+      <circle cx="42" cy="0" r="3.5" fill="#1E40AF">
+        <animate attributeName="r" values="3.2;4;3.2" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Trailing Particle -->
+      <circle cx="-30" cy="30" r="1.8" fill="#0A0D12" opacity="0.6"/>
+    </g>
+
+    <!-- Central Stable Node (Anchored System Core) -->
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#1E40AF" stroke-width="0.8" opacity="0.4"/>
+    <circle cx="0" cy="0" r="8" fill="#1E40AF"/>
+    <circle cx="0" cy="0" r="3.5" fill="#60A5FA" class="anim-pulse">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Telemetry Annotations (Static Technical Labels) -->
+    <text x="12" y="-105" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#0A0D12" opacity="0.6">CAL · R:98mm</text>
+    <text x="44" y="-36" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" font-weight="600" fill="#1E40AF">ORBIT.01</text>
+    <text x="-128" y="-6" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#0A0D12" opacity="0.4">-X</text>
+    <text x="116" y="-6" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#0A0D12" opacity="0.4">+X</text>
+    <text x="-30" y="112" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" fill="#0A0D12" opacity="0.5">T-AXIS // +Z</text>
+  </g>
+
+  <!-- Bottom boundary rule -->
+  <line x1="32" y1="428" x2="868" y2="428" stroke="#0A0D12" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Colophon / Monograph footer -->
+  <text x="44" y="446" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">DOC.ID // HDL-2026-ARCH</text>
+  <text x="260" y="446" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#0A0D12" letter-spacing="1" opacity="0.5">SYSTEM STATE: VERIFIED &amp; DOCUMENTED</text>
+
+  <!-- Precise Authentic Vector Barcode -->
+  <g transform="translate(730, 436)" opacity="0.7">
+    <rect x="0" y="0" width="1.5" height="16" fill="#0A0D12"/>
+    <rect x="3" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="6" y="0" width="2.5" height="16" fill="#0A0D12"/>
+    <rect x="11" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="14" y="0" width="3" height="16" fill="#0A0D12"/>
+    <rect x="19" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="22" y="0" width="2" height="16" fill="#0A0D12"/>
+    <rect x="26" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="29" y="0" width="3.5" height="16" fill="#0A0D12"/>
+    <rect x="35" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="38" y="0" width="2" height="16" fill="#0A0D12"/>
+    <rect x="42" y="0" width="1.5" height="16" fill="#0A0D12"/>
+    <rect x="46" y="0" width="3" height="16" fill="#0A0D12"/>
+    <rect x="51" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="54" y="0" width="2" height="16" fill="#0A0D12"/>
+    <rect x="58" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="61" y="0" width="2.5" height="16" fill="#0A0D12"/>
+    <rect x="66" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="69" y="0" width="3" height="16" fill="#0A0D12"/>
+    <rect x="74" y="0" width="1" height="16" fill="#0A0D12"/>
+    <rect x="77" y="0" width="2" height="16" fill="#0A0D12"/>
+    <text x="84" y="12" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" fill="#0A0D12" letter-spacing="1">HDL-2026</text>
+  </g>
+</svg>
