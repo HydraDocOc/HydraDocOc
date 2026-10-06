@@ -20,43 +20,6 @@
 
 </div>
 
-<div align="center">
-
-<table>
-<tr>
-<td width="220" valign="top">
-
-`01`&nbsp;&nbsp;**GEMINI PDF CHATBOT**<br/>
-<sub><code>SYS.01</code> · <b>ACTIVE</b> · RAG / DOCKER</sub><br/>
-<sub><a href="https://github.com/HydraDocOc/gemini-pdf-chatbot">View Source Repository →</a></sub>
-
-</td>
-<td width="220" valign="top">
-
-`02`&nbsp;&nbsp;**HIREHUB**<br/>
-<sub><code>SYS.02</code> · <b>ACTIVE</b> · FLASK / DJANGO</sub><br/>
-<sub><a href="https://github.com/HydraDocOc/HireHub-With-Resume-Builder-using-API">View Source Repository →</a></sub>
-
-</td>
-<td width="220" valign="top">
-
-`03`&nbsp;&nbsp;**AERO VELOCITY**<br/>
-<sub><code>SYS.03</code> · <b>ACTIVE</b> · FASTAPI / REACT</sub><br/>
-<sub><a href="https://github.com/HydraDocOc/Aero-Velocity">View Source Repository →</a></sub>
-
-</td>
-<td width="220" valign="top">
-
-`04`&nbsp;&nbsp;**MERN STACK — G06**<br/>
-<sub><code>SYS.04</code> · <b>LOG</b> · PHASE 01 IN PROGRESS</sub><br/>
-<sub><a href="https://github.com/HydraDocOc/MERN_STACK_G06">View Source Repository →</a></sub>
-
-</td>
-</tr>
-</table>
-
-</div>
-
 <br/>
 
 <div align="center">
@@ -221,7 +184,7 @@
 
 <div align="center">
 
-<img src="./assets/activity.svg" width="900" alt="Visual Systems &amp; Creative Media"/>
+<img src="./assets/activity.svg" width="900" alt="Contribution Matrix — GitHub activity for HydraDocOc"/>
 
 </div>
 

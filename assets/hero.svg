@@ -5,48 +5,6 @@
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0A0D12" stroke-width="0.25" opacity="0.08"/>
     </pattern>
 
-    <!-- CSS Animation Fallback & Styling -->
-    <style>
-      @keyframes orbit-cw-10 {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes orbit-ccw-16 {
-        from { transform: rotate(360deg); }
-        to { transform: rotate(0deg); }
-      }
-      @keyframes orbit-cw-22 {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes sweep-8 {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes pulse-slow {
-        0%, 100% { opacity: 0.5; }
-        50% { opacity: 1; }
-      }
-      .anim-orbit-inner {
-        transform-origin: 0px 0px;
-        animation: orbit-cw-10 10s linear infinite;
-      }
-      .anim-orbit-mid {
-        transform-origin: 0px 0px;
-        animation: orbit-ccw-16 16s linear infinite;
-      }
-      .anim-orbit-outer {
-        transform-origin: 0px 0px;
-        animation: orbit-cw-22 22s linear infinite;
-      }
-      .anim-sweep {
-        transform-origin: 0px 0px;
-        animation: sweep-8 8s linear infinite;
-      }
-      .anim-pulse {
-        animation: pulse-slow 3s ease-in-out infinite;
-      }
-    </style>
   </defs>
 
   <!-- Cream editorial background -->
@@ -170,13 +128,28 @@
   </g>
 
   <!-- ===================================================================
-       RIGHT PANEL: SOPHISTICATED ANIMATED ORBITAL NODE SPHERE
+       RIGHT PANEL: ORBITAL NODE SYSTEM
+       SMIL only (no CSS animation, no script) so it behaves the same when
+       the file is embedded as <img> on GitHub.
+       Static attributes are the resting composition: every moving element is
+       authored at its start position and every added element rests at
+       opacity 0, so the panel is a complete still if animation never runs.
+       Loops: ORBIT 1 = 20s (cw) · ORBIT 2 = 14s (ccw) · ORBIT 3 = 10s (cw)
+       Scan line = one pass per 30s · Radial sweep = one turn per 40s
        =================================================================== -->
   <g transform="translate(710, 240)">
-    <!-- Static Framework & Calibration Coordinates -->
+    <defs>
+      <clipPath id="orbit-field"><circle cx="0" cy="0" r="124"/></clipPath>
+    </defs>
+
+    <!-- Static Framework & Calibration Coordinates (outer ring static, inner rings breathe) -->
     <circle cx="0" cy="0" r="124" fill="none" stroke="#0A0D12" stroke-width="0.35" stroke-dasharray="2,4" opacity="0.25"/>
-    <circle cx="0" cy="0" r="98" fill="none" stroke="#0A0D12" stroke-width="0.6" opacity="0.35"/>
-    <circle cx="0" cy="0" r="68" fill="none" stroke="#0A0D12" stroke-width="0.4" opacity="0.2"/>
+    <circle cx="0" cy="0" r="98" fill="none" stroke="#0A0D12" stroke-width="0.6" opacity="0.35">
+      <animate attributeName="opacity" values="0.35;0.42;0.35" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="16s" begin="-5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#0A0D12" stroke-width="0.4" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.27;0.2" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="12s" begin="-2s" repeatCount="indefinite"/>
+    </circle>
 
     <!-- Hairline Axes -->
     <line x1="-135" y1="0" x2="135" y2="0" stroke="#0A0D12" stroke-width="0.4" opacity="0.3"/>
@@ -186,64 +159,106 @@
     <line x1="-8" y1="-8" x2="8" y2="8" stroke="#0A0D12" stroke-width="0.5" opacity="0.4"/>
     <line x1="-8" y1="8" x2="8" y2="-8" stroke="#0A0D12" stroke-width="0.5" opacity="0.4"/>
 
-    <!-- Micro-Scanning Sweep Line (Slow 8s rotation) -->
-    <g class="anim-sweep">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    <!-- Radial sweep: rests on the +X axis; one slow eased turn (14s) every 40s -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;360;360" keyTimes="0;0.35;1" calcMode="spline" keySplines="0.45 0 0.55 1;0 0 1 1" dur="40s" begin="12s" repeatCount="indefinite"/>
       <line x1="0" y1="0" x2="118" y2="0" stroke="#1E40AF" stroke-width="0.5" opacity="0.25"/>
       <circle cx="118" cy="0" r="1.5" fill="#1E40AF" opacity="0.4"/>
     </g>
 
-    <!-- ORBIT 3: Outer Elliptical Orbit (Slowest: 22s rotation) -->
+    <!-- Scan line: invisible at rest; crosses the field top to bottom in 6s, once per 30s -->
+    <g clip-path="url(#orbit-field)">
+      <line x1="-135" y1="0" x2="135" y2="0" stroke="#1E40AF" stroke-width="0.5" opacity="0">
+        <animateTransform attributeName="transform" type="translate" values="0 -124;0 124;0 124" keyTimes="0;0.2;1" calcMode="spline" keySplines="0.45 0 0.55 1;0 0 1 1" dur="30s" begin="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.4;0.4;0;0" keyTimes="0;0.04;0.16;0.2;1" dur="30s" begin="4s" repeatCount="indefinite"/>
+      </line>
+    </g>
+
+    <!-- ORBIT 1: large elliptical orbit, tilted -30°, 2 nodes, 20s clockwise.
+         Nodes travel the ellipse itself (animateMotion on a relative arc path
+         that starts at the node's authored position). Labels are counter-
+         rotated by +30° so they stay upright. -->
     <g transform="rotate(-30)">
-      <!-- Static Orbit Ellipse Path -->
-      <ellipse cx="0" cy="0" rx="112" ry="46" fill="none" stroke="#0A0D12" stroke-width="0.6" stroke-dasharray="5,4" opacity="0.35"/>
-      <!-- Rotating Node System -->
-      <g class="anim-orbit-outer">
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
-        <!-- Node D: Cobalt Outer Node -->
+      <ellipse cx="0" cy="0" rx="112" ry="46" fill="none" stroke="#0A0D12" stroke-width="0.6" stroke-dasharray="5,4" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.44;0.35" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="18s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Fixed reference point on the orbit -->
+      <circle cx="56" cy="-40" r="1.5" fill="#1E40AF" opacity="0.75"/>
+      <!-- Node N.01 (cobalt) -->
+      <g>
+        <animateMotion path="M0,0 a112,46 0 0,1 -224,0 a112,46 0 0,1 224,0" dur="20s" repeatCount="indefinite"/>
         <circle cx="112" cy="0" r="3.5" fill="#1E40AF"/>
-        <!-- Node E: Dark Perimeter Node -->
+        <text transform="translate(112,0) rotate(30)" x="6" y="-5" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" letter-spacing="0.8" fill="#1E40AF" opacity="0.65">N.01<animate attributeName="opacity" values="0.65;0.85;0.65" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="11s" repeatCount="indefinite"/></text>
+      </g>
+      <!-- Node N.02 (ink), opposite phase -->
+      <g>
+        <animateMotion path="M0,0 a112,46 0 0,1 224,0 a112,46 0 0,1 -224,0" dur="20s" repeatCount="indefinite"/>
         <circle cx="-112" cy="0" r="2.5" fill="#0A0D12"/>
-        <!-- Traveling Particle -->
-        <circle cx="56" cy="-40" r="1.5" fill="#1E40AF" opacity="0.75"/>
+        <text transform="translate(-112,0) rotate(30)" x="6" y="-5" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" letter-spacing="0.8" fill="#0A0D12" opacity="0.5">N.02<animate attributeName="opacity" values="0.5;0.7;0.5" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="13s" begin="-4s" repeatCount="indefinite"/></text>
       </g>
     </g>
 
-    <!-- ORBIT 2: Middle Elliptical Orbit (Medium: 16s counter-rotation) -->
+    <!-- ORBIT 2: tilted elliptical orbit (35°), 2 nodes, 14s counter-clockwise -->
     <g transform="rotate(35)">
-      <!-- Static Orbit Ellipse Path -->
-      <ellipse cx="0" cy="0" rx="80" ry="34" fill="none" stroke="#0A0D12" stroke-width="0.7" opacity="0.45"/>
-      <!-- Counter-Rotating Node System -->
-      <g class="anim-orbit-mid">
-        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
-        <!-- Node B: Dark Node -->
+      <ellipse cx="0" cy="0" rx="80" ry="34" fill="none" stroke="#0A0D12" stroke-width="0.7" opacity="0.45">
+        <animate attributeName="opacity" values="0.45;0.54;0.45" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="14s" begin="-6s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Fixed reference point on the orbit -->
+      <circle cx="0" cy="34" r="1.6" fill="#60A5FA"/>
+      <!-- Node N.03 (ink) -->
+      <g>
+        <animateMotion path="M0,0 a80,34 0 0,0 -160,0 a80,34 0 0,0 160,0" dur="14s" repeatCount="indefinite"/>
         <circle cx="80" cy="0" r="3" fill="#0A0D12"/>
-        <!-- Node C: Cobalt Node -->
+        <text transform="translate(80,0) rotate(-35)" x="6" y="-5" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" letter-spacing="0.8" fill="#0A0D12" opacity="0.5">N.03<animate attributeName="opacity" values="0.5;0.7;0.5" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="12s" begin="-7s" repeatCount="indefinite"/></text>
+      </g>
+      <!-- Node N.04 (cobalt), opposite phase -->
+      <g>
+        <animateMotion path="M0,0 a80,34 0 0,0 160,0 a80,34 0 0,0 -160,0" dur="14s" repeatCount="indefinite"/>
         <circle cx="-80" cy="0" r="2.5" fill="#1E40AF"/>
-        <!-- Micro-Particle -->
-        <circle cx="0" cy="34" r="1.6" fill="#60A5FA"/>
+        <text transform="translate(-80,0) rotate(-35)" x="6" y="-5" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" letter-spacing="0.8" fill="#1E40AF" opacity="0.65">N.04<animate attributeName="opacity" values="0.65;0.85;0.65" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="10s" begin="-3s" repeatCount="indefinite"/></text>
       </g>
     </g>
 
-    <!-- ORBIT 1: Inner Circular Orbit (Fastest: 10s rotation) -->
-    <!-- Static Orbit Ring -->
-    <circle cx="0" cy="0" r="42" fill="none" stroke="#1E40AF" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.6"/>
-    <!-- Rotating Inner Nodes -->
-    <g class="anim-orbit-inner">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
-      <!-- Node A: Cobalt Node with gentle pulse -->
+    <!-- ORBIT 3: inner circular orbit, 2 nodes, 10s clockwise.
+         Labels sit in a group that counter-rotates by the same angle, so they
+         stay upright and keep a fixed offset from their node. -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1E40AF" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.7;0.6" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="9s" begin="-1s" repeatCount="indefinite"/>
+    </circle>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="10s" repeatCount="indefinite"/>
+      <!-- Node N.05 (cobalt, gentle size pulse) -->
       <circle cx="42" cy="0" r="3.5" fill="#1E40AF">
         <animate attributeName="r" values="3.2;4;3.2" dur="3s" repeatCount="indefinite"/>
       </circle>
-      <!-- Trailing Particle -->
+      <g transform="translate(42,0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="10s" repeatCount="indefinite"/>
+          <text x="6" y="-5" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" letter-spacing="0.8" fill="#1E40AF" opacity="0.65">N.05<animate attributeName="opacity" values="0.65;0.85;0.65" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="9s" begin="-2s" repeatCount="indefinite"/></text>
+        </g>
+      </g>
+      <!-- Node N.06 (ink), trailing -->
       <circle cx="-30" cy="30" r="1.8" fill="#0A0D12" opacity="0.6"/>
+      <g transform="translate(-30,30)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="10s" repeatCount="indefinite"/>
+          <text x="6" y="-5" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6" letter-spacing="0.8" fill="#0A0D12" opacity="0.5">N.06<animate attributeName="opacity" values="0.5;0.7;0.5" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="11s" begin="-5s" repeatCount="indefinite"/></text>
+        </g>
+      </g>
     </g>
 
-    <!-- Central Stable Node (Anchored System Core) -->
-    <circle cx="0" cy="0" r="16" fill="none" stroke="#1E40AF" stroke-width="0.8" opacity="0.4"/>
+    <!-- CENTRAL NODE: fixed. Ring breathes and a faint ping expands every 7s;
+         the core dot pulses at half that period (3.5s). -->
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#1E40AF" stroke-width="0.8" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.3;0.4" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#1E40AF" stroke-width="0.5" opacity="0">
+      <animate attributeName="r" values="16;36" keyTimes="0;1" calcMode="spline" keySplines="0.2 0.6 0.4 1" dur="7s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.3;0" keyTimes="0;0.12;1" dur="7s" begin="1s" repeatCount="indefinite"/>
+    </circle>
     <circle cx="0" cy="0" r="8" fill="#1E40AF"/>
-    <circle cx="0" cy="0" r="3.5" fill="#60A5FA" class="anim-pulse">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="3.5" fill="#60A5FA">
+      <animate attributeName="opacity" values="0.6;1;0.6" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3.5s" repeatCount="indefinite"/>
     </circle>
 
     <!-- Telemetry Annotations (Static Technical Labels) -->

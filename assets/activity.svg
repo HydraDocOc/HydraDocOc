@@ -1,125 +1,130 @@
-<svg width="900" height="290" viewBox="0 0 900 290" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="396" viewBox="0 0 900 396" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Contribution matrix 2026 — @HydraDocOc</title>
+  <desc id="d">Contribution matrix 2026 for @HydraDocOc: awaiting first sync from GitHub.</desc>
   <defs>
-    <!-- Dark micro-grid pattern -->
-    <pattern id="vis-grid" width="25" height="25" patternUnits="userSpaceOnUse">
-      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#CBD0D6" stroke-width="0.2" opacity="0.1"/>
+    <style>.m{font-family:'IBM Plex Mono','SF Mono',Consolas,monospace}.d{font-family:'Arial Black','Impact','Helvetica Neue',sans-serif;font-weight:900}</style>
+    <pattern id="act-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#0A0D12" stroke-width="0.2" opacity="0.07"/>
     </pattern>
   </defs>
-
-  <!-- Deep ink black background -->
-  <rect width="900" height="290" fill="#0A0D12"/>
-  <rect width="900" height="290" fill="url(#vis-grid)"/>
-
-  <!-- Precision edge cobalt accents -->
-  <rect x="0" y="0" width="3" height="290" fill="#1E40AF"/>
-  <rect x="897" y="0" width="3" height="290" fill="#1E40AF"/>
-
-  <!-- Top hairline framing -->
-  <line x1="32" y1="20" x2="868" y2="20" stroke="#CBD0D6" stroke-width="0.4" opacity="0.25"/>
-
-  <!-- Section index tag -->
-  <text x="32" y="16" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" font-weight="600" fill="#CBD0D6" letter-spacing="3" opacity="0.6">INDEX // 06</text>
-  <text x="140" y="16" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" letter-spacing="1.5" opacity="0.4">CREATIVE COMPUTE &amp; CINEMATIC EXTENSION</text>
-  <text x="730" y="16" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#1E40AF" letter-spacing="1">FIVE DISCIPLINES</text>
-
-  <!-- Section title -->
-  <text x="32" y="48"
-        font-family="'Arial Black','Impact','Helvetica Neue',sans-serif"
-        font-size="22"
-        font-weight="900"
-        fill="#F0EAE1"
-        letter-spacing="1.5">/// VISUAL SYSTEMS</text>
-
-  <text x="32" y="66" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9" fill="#CBD0D6" opacity="0.7">
-    Where code meets image: cinematography, typography, and procedural aesthetics as rigorous systems.
-  </text>
-
-  <line x1="32" y1="76" x2="868" y2="76" stroke="#CBD0D6" stroke-width="0.3" opacity="0.2"/>
-
-  <!-- ===================================================================
-       FIVE EQUAL-WIDTH EDITORIAL DISCIPLINE CARDS (154px width each)
-       =================================================================== -->
-
-  <!-- CARD 01: FILM -->
-  <g transform="translate(32, 92)">
-    <rect width="154" height="136" fill="none" stroke="#CBD0D6" stroke-width="0.4" opacity="0.3"/>
-    <rect width="154" height="2.5" fill="#1E40AF"/>
-
-    <text x="14" y="24" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" font-weight="700" fill="#60A5FA" letter-spacing="1.5">DISCIPLINE.01</text>
-    <text x="14" y="48" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-size="16" font-weight="900" fill="#F0EAE1" letter-spacing="1">FILM</text>
-    <line x1="14" y1="56" x2="140" y2="56" stroke="#CBD0D6" stroke-width="0.25" opacity="0.2"/>
-
-    <text x="14" y="74" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Cinematography</text>
-    <text x="14" y="90" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Narrative Rhythm</text>
-    <text x="14" y="106" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Visual Direction</text>
-    <text x="14" y="122" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#60A5FA">OPTICAL</text>
+  <rect width="900" height="396" fill="#F0EAE1"/>
+  <rect width="900" height="396" fill="url(#act-grid)"/>
+  <line x1="32" y1="20" x2="868" y2="20" stroke="#0A0D12" stroke-width="1.2"/>
+  <text class="m" x="32" y="38" font-size="8" font-weight="600" fill="#0A0D12" letter-spacing="3" opacity="0.6">INDEX // 06</text>
+  <text class="m" x="140" y="38" font-size="8" fill="#0A0D12" letter-spacing="1.5" opacity="0.4">GITHUB CONTRIBUTION DATA</text>
+  <text class="m" x="868" y="38" font-size="8" fill="#1E40AF" letter-spacing="1" text-anchor="end">@HydraDocOc</text>
+  <text class="d" x="32" y="66" font-size="24" fill="#0A0D12" letter-spacing="1.5">/// CONTRIBUTION MATRIX</text>
+  <text class="d" x="868" y="66" font-size="24" fill="#1E40AF" letter-spacing="1.5" text-anchor="end">2026</text>
+  <line x1="32" y1="76" x2="868" y2="76" stroke="#0A0D12" stroke-width="0.5" opacity="0.3"/>
+  <text class="m" x="64" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">JAN</text>
+  <text class="m" x="140.2" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">FEB</text>
+  <text class="m" x="201.1" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">MAR</text>
+  <text class="m" x="262" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">APR</text>
+  <text class="m" x="322.9" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">MAY</text>
+  <text class="m" x="399.1" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">JUN</text>
+  <text class="m" x="460" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">JUL</text>
+  <text class="m" x="520.9" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">AUG</text>
+  <text class="m" x="597.1" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">SEP</text>
+  <text class="m" x="658" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">OCT</text>
+  <text class="m" x="734.1" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">NOV</text>
+  <text class="m" x="795" y="98" font-size="7.5" fill="#0A0D12" letter-spacing="1.5" opacity="0.6">DEC</text>
+  <text class="m" x="32" y="129.5" font-size="6.5" fill="#0A0D12" letter-spacing="1" opacity="0.5">MON</text>
+  <text class="m" x="32" y="160" font-size="6.5" fill="#0A0D12" letter-spacing="1" opacity="0.5">WED</text>
+  <text class="m" x="32" y="190.5" font-size="6.5" fill="#0A0D12" letter-spacing="1" opacity="0.5">FRI</text>
+  <g id="m01">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M64 166.9h12v12h-12zM64 182.2h12v12h-12zM64 197.4h12v12h-12zM79.2 106h12v12h-12zM79.2 121.2h12v12h-12zM79.2 136.5h12v12h-12zM79.2 151.7h12v12h-12zM79.2 166.9h12v12h-12zM79.2 182.2h12v12h-12zM79.2 197.4h12v12h-12zM94.5 106h12v12h-12zM94.5 121.2h12v12h-12zM94.5 136.5h12v12h-12zM94.5 151.7h12v12h-12zM94.5 166.9h12v12h-12zM94.5 182.2h12v12h-12zM94.5 197.4h12v12h-12zM109.7 106h12v12h-12zM109.7 121.2h12v12h-12zM109.7 136.5h12v12h-12zM109.7 151.7h12v12h-12zM109.7 166.9h12v12h-12zM109.7 182.2h12v12h-12zM109.7 197.4h12v12h-12zM124.9 106h12v12h-12zM124.9 121.2h12v12h-12zM124.9 136.5h12v12h-12zM124.9 151.7h12v12h-12zM124.9 166.9h12v12h-12zM124.9 182.2h12v12h-12zM124.9 197.4h12v12h-12z"/>
   </g>
-
-  <!-- CARD 02: PHOTO -->
-  <g transform="translate(202, 92)">
-    <rect width="154" height="136" fill="none" stroke="#CBD0D6" stroke-width="0.4" opacity="0.3"/>
-    <rect width="154" height="2.5" fill="#1E40AF"/>
-
-    <text x="14" y="24" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" font-weight="700" fill="#60A5FA" letter-spacing="1.5">DISCIPLINE.02</text>
-    <text x="14" y="48" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-size="16" font-weight="900" fill="#F0EAE1" letter-spacing="1">PHOTO</text>
-    <line x1="14" y1="56" x2="140" y2="56" stroke="#CBD0D6" stroke-width="0.25" opacity="0.2"/>
-
-    <text x="14" y="74" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Framing &amp; Angle</text>
-    <text x="14" y="90" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Natural Light Study</text>
-    <text x="14" y="106" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Architecture Study</text>
-    <text x="14" y="122" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#60A5FA">GEOMETRY</text>
+  <g id="m02">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.1228;1" dur="0.57s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M140.2 106h12v12h-12zM140.2 121.2h12v12h-12zM140.2 136.5h12v12h-12zM140.2 151.7h12v12h-12zM140.2 166.9h12v12h-12zM140.2 182.2h12v12h-12zM140.2 197.4h12v12h-12zM155.4 106h12v12h-12zM155.4 121.2h12v12h-12zM155.4 136.5h12v12h-12zM155.4 151.7h12v12h-12zM155.4 166.9h12v12h-12zM155.4 182.2h12v12h-12zM155.4 197.4h12v12h-12zM170.6 106h12v12h-12zM170.6 121.2h12v12h-12zM170.6 136.5h12v12h-12zM170.6 151.7h12v12h-12zM170.6 166.9h12v12h-12zM170.6 182.2h12v12h-12zM170.6 197.4h12v12h-12zM185.8 106h12v12h-12zM185.8 121.2h12v12h-12zM185.8 136.5h12v12h-12zM185.8 151.7h12v12h-12zM185.8 166.9h12v12h-12zM185.8 182.2h12v12h-12zM185.8 197.4h12v12h-12z"/>
   </g>
-
-  <!-- CARD 03: EDITING -->
-  <g transform="translate(372, 92)">
-    <rect width="154" height="136" fill="none" stroke="#CBD0D6" stroke-width="0.4" opacity="0.3"/>
-    <rect width="154" height="2.5" fill="#F0EAE1" opacity="0.8"/>
-
-    <text x="14" y="24" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" font-weight="700" fill="#CBD0D6" letter-spacing="1.5">DISCIPLINE.03</text>
-    <text x="14" y="48" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-size="16" font-weight="900" fill="#F0EAE1" letter-spacing="1">EDITING</text>
-    <line x1="14" y1="56" x2="140" y2="56" stroke="#CBD0D6" stroke-width="0.25" opacity="0.2"/>
-
-    <text x="14" y="74" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">DaVinci Resolve</text>
-    <text x="14" y="90" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Color Grading</text>
-    <text x="14" y="106" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Sound &amp; Pacing</text>
-    <text x="14" y="122" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#CBD0D6" opacity="0.6">POST-PROD</text>
+  <g id="m03">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.2188;1" dur="0.64s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M201.1 106h12v12h-12zM201.1 121.2h12v12h-12zM201.1 136.5h12v12h-12zM201.1 151.7h12v12h-12zM201.1 166.9h12v12h-12zM201.1 182.2h12v12h-12zM201.1 197.4h12v12h-12zM216.3 106h12v12h-12zM216.3 121.2h12v12h-12zM216.3 136.5h12v12h-12zM216.3 151.7h12v12h-12zM216.3 166.9h12v12h-12zM216.3 182.2h12v12h-12zM216.3 197.4h12v12h-12zM231.5 106h12v12h-12zM231.5 121.2h12v12h-12zM231.5 136.5h12v12h-12zM231.5 151.7h12v12h-12zM231.5 166.9h12v12h-12zM231.5 182.2h12v12h-12zM231.5 197.4h12v12h-12zM246.8 106h12v12h-12zM246.8 121.2h12v12h-12zM246.8 136.5h12v12h-12zM246.8 151.7h12v12h-12zM246.8 166.9h12v12h-12zM246.8 182.2h12v12h-12zM246.8 197.4h12v12h-12zM262 106h12v12h-12zM262 121.2h12v12h-12zM262 136.5h12v12h-12z"/>
   </g>
-
-  <!-- CARD 04: DESIGN -->
-  <g transform="translate(542, 92)">
-    <rect width="154" height="136" fill="none" stroke="#CBD0D6" stroke-width="0.4" opacity="0.3"/>
-    <rect width="154" height="2.5" fill="#F0EAE1" opacity="0.8"/>
-
-    <text x="14" y="24" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" font-weight="700" fill="#CBD0D6" letter-spacing="1.5">DISCIPLINE.04</text>
-    <text x="14" y="48" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-size="16" font-weight="900" fill="#F0EAE1" letter-spacing="1">DESIGN</text>
-    <line x1="14" y1="56" x2="140" y2="56" stroke="#CBD0D6" stroke-width="0.25" opacity="0.2"/>
-
-    <text x="14" y="74" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Adobe Suite</text>
-    <text x="14" y="90" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Editorial Systems</text>
-    <text x="14" y="106" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Visual Identity</text>
-    <text x="14" y="122" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#CBD0D6" opacity="0.6">TYPOGRAPHY</text>
+  <g id="m04">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.2958;1" dur="0.71s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M262 151.7h12v12h-12zM262 166.9h12v12h-12zM262 182.2h12v12h-12zM262 197.4h12v12h-12zM277.2 106h12v12h-12zM277.2 121.2h12v12h-12zM277.2 136.5h12v12h-12zM277.2 151.7h12v12h-12zM277.2 166.9h12v12h-12zM277.2 182.2h12v12h-12zM277.2 197.4h12v12h-12zM292.5 106h12v12h-12zM292.5 121.2h12v12h-12zM292.5 136.5h12v12h-12zM292.5 151.7h12v12h-12zM292.5 166.9h12v12h-12zM292.5 182.2h12v12h-12zM292.5 197.4h12v12h-12zM307.7 106h12v12h-12zM307.7 121.2h12v12h-12zM307.7 136.5h12v12h-12zM307.7 151.7h12v12h-12zM307.7 166.9h12v12h-12zM307.7 182.2h12v12h-12zM307.7 197.4h12v12h-12zM322.9 106h12v12h-12zM322.9 121.2h12v12h-12zM322.9 136.5h12v12h-12zM322.9 151.7h12v12h-12zM322.9 166.9h12v12h-12z"/>
   </g>
-
-  <!-- CARD 05: PROCEDURAL / AI -->
-  <g transform="translate(714, 92)">
-    <rect width="154" height="136" fill="none" stroke="#CBD0D6" stroke-width="0.4" opacity="0.3"/>
-    <rect width="154" height="2.5" fill="#1E40AF"/>
-
-    <text x="14" y="24" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7" font-weight="700" fill="#60A5FA" letter-spacing="1.5">DISCIPLINE.05</text>
-    <text x="14" y="48" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-size="16" font-weight="900" fill="#F0EAE1" letter-spacing="1">PROCEDURAL</text>
-    <line x1="14" y1="56" x2="140" y2="56" stroke="#CBD0D6" stroke-width="0.25" opacity="0.2"/>
-
-    <text x="14" y="74" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">AI x Aesthetics</text>
-    <text x="14" y="90" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Generative Media</text>
-    <text x="14" y="106" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="7.5" fill="#CBD0D6" opacity="0.75">Visual Coding</text>
-    <text x="14" y="122" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="6.5" fill="#60A5FA">EXPLORATORY</text>
+  <g id="m05">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.3590;1" dur="0.78s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M322.9 182.2h12v12h-12zM322.9 197.4h12v12h-12zM338.1 106h12v12h-12zM338.1 121.2h12v12h-12zM338.1 136.5h12v12h-12zM338.1 151.7h12v12h-12zM338.1 166.9h12v12h-12zM338.1 182.2h12v12h-12zM338.1 197.4h12v12h-12zM353.4 106h12v12h-12zM353.4 121.2h12v12h-12zM353.4 136.5h12v12h-12zM353.4 151.7h12v12h-12zM353.4 166.9h12v12h-12zM353.4 182.2h12v12h-12zM353.4 197.4h12v12h-12zM368.6 106h12v12h-12zM368.6 121.2h12v12h-12zM368.6 136.5h12v12h-12zM368.6 151.7h12v12h-12zM368.6 166.9h12v12h-12zM368.6 182.2h12v12h-12zM368.6 197.4h12v12h-12zM383.8 106h12v12h-12zM383.8 121.2h12v12h-12zM383.8 136.5h12v12h-12zM383.8 151.7h12v12h-12zM383.8 166.9h12v12h-12zM383.8 182.2h12v12h-12zM383.8 197.4h12v12h-12zM399.1 106h12v12h-12z"/>
   </g>
-
-  <!-- Editorial footer note -->
-  <g transform="translate(32, 252)">
-    <line x1="0" y1="0" x2="836" y2="0" stroke="#CBD0D6" stroke-width="0.3" opacity="0.2"/>
-    <text x="0" y="16" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#CBD0D6" letter-spacing="1" opacity="0.5">
-      LAB STATEMENT // Visual storytelling and architectural design inform code structure: clarity, rhythm, and zero waste.
-    </text>
+  <g id="m06">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.4118;1" dur="0.85s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M399.1 121.2h12v12h-12zM399.1 136.5h12v12h-12zM399.1 151.7h12v12h-12zM399.1 166.9h12v12h-12zM399.1 182.2h12v12h-12zM399.1 197.4h12v12h-12zM414.3 106h12v12h-12zM414.3 121.2h12v12h-12zM414.3 136.5h12v12h-12zM414.3 151.7h12v12h-12zM414.3 166.9h12v12h-12zM414.3 182.2h12v12h-12zM414.3 197.4h12v12h-12zM429.5 106h12v12h-12zM429.5 121.2h12v12h-12zM429.5 136.5h12v12h-12zM429.5 151.7h12v12h-12zM429.5 166.9h12v12h-12zM429.5 182.2h12v12h-12zM429.5 197.4h12v12h-12zM444.8 106h12v12h-12zM444.8 121.2h12v12h-12zM444.8 136.5h12v12h-12zM444.8 151.7h12v12h-12zM444.8 166.9h12v12h-12zM444.8 182.2h12v12h-12zM444.8 197.4h12v12h-12zM460 106h12v12h-12zM460 121.2h12v12h-12zM460 136.5h12v12h-12z"/>
   </g>
+  <g id="m07">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.4565;1" dur="0.92s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M460 151.7h12v12h-12zM460 166.9h12v12h-12zM460 182.2h12v12h-12zM460 197.4h12v12h-12zM475.2 106h12v12h-12zM475.2 121.2h12v12h-12zM475.2 136.5h12v12h-12zM475.2 151.7h12v12h-12zM475.2 166.9h12v12h-12zM475.2 182.2h12v12h-12zM475.2 197.4h12v12h-12zM490.4 106h12v12h-12zM490.4 121.2h12v12h-12zM490.4 136.5h12v12h-12zM490.4 151.7h12v12h-12zM490.4 166.9h12v12h-12zM490.4 182.2h12v12h-12zM490.4 197.4h12v12h-12zM505.7 106h12v12h-12zM505.7 121.2h12v12h-12zM505.7 136.5h12v12h-12zM505.7 151.7h12v12h-12zM505.7 166.9h12v12h-12zM505.7 182.2h12v12h-12zM505.7 197.4h12v12h-12zM520.9 106h12v12h-12zM520.9 121.2h12v12h-12zM520.9 136.5h12v12h-12zM520.9 151.7h12v12h-12zM520.9 166.9h12v12h-12zM520.9 182.2h12v12h-12z"/>
+  </g>
+  <g id="m08">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.4949;1" dur="0.99s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M520.9 197.4h12v12h-12zM536.1 106h12v12h-12zM536.1 121.2h12v12h-12zM536.1 136.5h12v12h-12zM536.1 151.7h12v12h-12zM536.1 166.9h12v12h-12zM536.1 182.2h12v12h-12zM536.1 197.4h12v12h-12zM551.4 106h12v12h-12zM551.4 121.2h12v12h-12zM551.4 136.5h12v12h-12zM551.4 151.7h12v12h-12zM551.4 166.9h12v12h-12zM551.4 182.2h12v12h-12zM551.4 197.4h12v12h-12zM566.6 106h12v12h-12zM566.6 121.2h12v12h-12zM566.6 136.5h12v12h-12zM566.6 151.7h12v12h-12zM566.6 166.9h12v12h-12zM566.6 182.2h12v12h-12zM566.6 197.4h12v12h-12zM581.8 106h12v12h-12zM581.8 121.2h12v12h-12zM581.8 136.5h12v12h-12zM581.8 151.7h12v12h-12zM581.8 166.9h12v12h-12zM581.8 182.2h12v12h-12zM581.8 197.4h12v12h-12zM597.1 106h12v12h-12zM597.1 121.2h12v12h-12z"/>
+  </g>
+  <g id="m09">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5283;1" dur="1.06s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M597.1 136.5h12v12h-12zM597.1 151.7h12v12h-12zM597.1 166.9h12v12h-12zM597.1 182.2h12v12h-12zM597.1 197.4h12v12h-12zM612.3 106h12v12h-12zM612.3 121.2h12v12h-12zM612.3 136.5h12v12h-12zM612.3 151.7h12v12h-12zM612.3 166.9h12v12h-12zM612.3 182.2h12v12h-12zM612.3 197.4h12v12h-12zM627.5 106h12v12h-12zM627.5 121.2h12v12h-12zM627.5 136.5h12v12h-12zM627.5 151.7h12v12h-12zM627.5 166.9h12v12h-12zM627.5 182.2h12v12h-12zM627.5 197.4h12v12h-12zM642.7 106h12v12h-12zM642.7 121.2h12v12h-12zM642.7 136.5h12v12h-12zM642.7 151.7h12v12h-12zM642.7 166.9h12v12h-12zM642.7 182.2h12v12h-12zM642.7 197.4h12v12h-12zM658 106h12v12h-12zM658 121.2h12v12h-12zM658 136.5h12v12h-12zM658 151.7h12v12h-12z"/>
+  </g>
+  <g id="m10">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5575;1" dur="1.13s" begin="0s"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M658 166.9h12v12h-12zM658 182.2h12v12h-12zM658 197.4h12v12h-12zM673.2 106h12v12h-12zM673.2 121.2h12v12h-12zM673.2 136.5h12v12h-12z"/>
+    <path fill="none" stroke="#0A0D12" stroke-opacity="0.18" stroke-width="0.5" stroke-dasharray="1.5 1.5" d="M673.2 151.7h12v12h-12zM673.2 166.9h12v12h-12zM673.2 182.2h12v12h-12zM673.2 197.4h12v12h-12zM688.4 106h12v12h-12zM688.4 121.2h12v12h-12zM688.4 136.5h12v12h-12zM688.4 151.7h12v12h-12zM688.4 166.9h12v12h-12zM688.4 182.2h12v12h-12zM688.4 197.4h12v12h-12zM703.7 106h12v12h-12zM703.7 121.2h12v12h-12zM703.7 136.5h12v12h-12zM703.7 151.7h12v12h-12zM703.7 166.9h12v12h-12zM703.7 182.2h12v12h-12zM703.7 197.4h12v12h-12zM718.9 106h12v12h-12zM718.9 121.2h12v12h-12zM718.9 136.5h12v12h-12zM718.9 151.7h12v12h-12zM718.9 166.9h12v12h-12zM718.9 182.2h12v12h-12zM718.9 197.4h12v12h-12z"/>
+  </g>
+  <g id="m11">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5833;1" dur="1.20s" begin="0s"/>
+    <path fill="none" stroke="#0A0D12" stroke-opacity="0.18" stroke-width="0.5" stroke-dasharray="1.5 1.5" d="M734.1 106h12v12h-12zM734.1 121.2h12v12h-12zM734.1 136.5h12v12h-12zM734.1 151.7h12v12h-12zM734.1 166.9h12v12h-12zM734.1 182.2h12v12h-12zM734.1 197.4h12v12h-12zM749.4 106h12v12h-12zM749.4 121.2h12v12h-12zM749.4 136.5h12v12h-12zM749.4 151.7h12v12h-12zM749.4 166.9h12v12h-12zM749.4 182.2h12v12h-12zM749.4 197.4h12v12h-12zM764.6 106h12v12h-12zM764.6 121.2h12v12h-12zM764.6 136.5h12v12h-12zM764.6 151.7h12v12h-12zM764.6 166.9h12v12h-12zM764.6 182.2h12v12h-12zM764.6 197.4h12v12h-12zM779.8 106h12v12h-12zM779.8 121.2h12v12h-12zM779.8 136.5h12v12h-12zM779.8 151.7h12v12h-12zM779.8 166.9h12v12h-12zM779.8 182.2h12v12h-12zM779.8 197.4h12v12h-12zM795 106h12v12h-12zM795 121.2h12v12h-12z"/>
+  </g>
+  <g id="m12">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6063;1" dur="1.27s" begin="0s"/>
+    <path fill="none" stroke="#0A0D12" stroke-opacity="0.18" stroke-width="0.5" stroke-dasharray="1.5 1.5" d="M795 136.5h12v12h-12zM795 151.7h12v12h-12zM795 166.9h12v12h-12zM795 182.2h12v12h-12zM795 197.4h12v12h-12zM810.3 106h12v12h-12zM810.3 121.2h12v12h-12zM810.3 136.5h12v12h-12zM810.3 151.7h12v12h-12zM810.3 166.9h12v12h-12zM810.3 182.2h12v12h-12zM810.3 197.4h12v12h-12zM825.5 106h12v12h-12zM825.5 121.2h12v12h-12zM825.5 136.5h12v12h-12zM825.5 151.7h12v12h-12zM825.5 166.9h12v12h-12zM825.5 182.2h12v12h-12zM825.5 197.4h12v12h-12zM840.7 106h12v12h-12zM840.7 121.2h12v12h-12zM840.7 136.5h12v12h-12zM840.7 151.7h12v12h-12zM840.7 166.9h12v12h-12zM840.7 182.2h12v12h-12zM840.7 197.4h12v12h-12zM856 106h12v12h-12zM856 121.2h12v12h-12zM856 136.5h12v12h-12zM856 151.7h12v12h-12zM856 166.9h12v12h-12z"/>
+  </g>
+  <g id="summary">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6429;1" dur="1.40s" begin="0s"/>
+    <text class="m" x="32" y="236" font-size="8" fill="#0A0D12" letter-spacing="1" opacity="0.6">AWAITING FIRST SYNC</text>
+    <text class="m" x="770" y="235" font-size="7" fill="#0A0D12" letter-spacing="1" opacity="0.5" text-anchor="end">LESS</text>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M776 226h10v10h-10z"/>
+    <path fill="#BDC3CB" d="M790 226h10v10h-10z"/>
+    <path fill="#646C79" d="M804 226h10v10h-10z"/>
+    <path fill="#1E40AF" d="M818 226h10v10h-10z"/>
+    <path fill="#1E40AF" d="M832 226h10v10h-10z"/>
+    <path fill="#F0EAE1" d="M835.8 229.8h2.5v2.5h-2.5z"/>
+    <text class="m" x="868" y="235" font-size="7" fill="#0A0D12" letter-spacing="1" opacity="0.5" text-anchor="end">MORE</text>
+    <line x1="32" y1="250" x2="868" y2="250" stroke="#0A0D12" stroke-width="0.5" opacity="0.3"/>
+    <g transform="translate(32, 264)">
+      <rect width="197" height="84" fill="#0A0D12"/>
+      <rect width="3" height="84" fill="#1E40AF"/>
+      <text class="m" x="20" y="26" font-size="8" font-weight="700" fill="#60A5FA" letter-spacing="2">01 · COMMITS</text>
+      <text class="m" x="181" y="26" font-size="7.5" fill="#CBD0D6" letter-spacing="1" opacity="0.4" text-anchor="end">2026</text>
+      <text class="d" x="20" y="61" font-size="30" fill="#F0EAE1" letter-spacing="0.5">—</text>
+      <text class="m" x="20" y="76" font-size="7" fill="#CBD0D6" letter-spacing="1" opacity="0.55">COMMIT CONTRIBUTIONS</text>
+    </g>
+    <g transform="translate(245, 264)">
+      <rect width="197" height="84" fill="#0A0D12"/>
+      <rect width="3" height="84" fill="#1E40AF"/>
+      <text class="m" x="20" y="26" font-size="8" font-weight="700" fill="#60A5FA" letter-spacing="2">02 · PULL REQUESTS</text>
+      <text class="m" x="181" y="26" font-size="7.5" fill="#CBD0D6" letter-spacing="1" opacity="0.4" text-anchor="end">2026</text>
+      <text class="d" x="20" y="61" font-size="30" fill="#F0EAE1" letter-spacing="0.5">—</text>
+      <text class="m" x="20" y="76" font-size="7" fill="#CBD0D6" letter-spacing="1" opacity="0.55">PULL REQUESTS OPENED</text>
+    </g>
+    <g transform="translate(458, 264)">
+      <rect width="197" height="84" fill="#0A0D12"/>
+      <rect width="3" height="84" fill="#1E40AF"/>
+      <text class="m" x="20" y="26" font-size="8" font-weight="700" fill="#60A5FA" letter-spacing="2">03 · ISSUES</text>
+      <text class="m" x="181" y="26" font-size="7.5" fill="#CBD0D6" letter-spacing="1" opacity="0.4" text-anchor="end">2026</text>
+      <text class="d" x="20" y="61" font-size="30" fill="#F0EAE1" letter-spacing="0.5">—</text>
+      <text class="m" x="20" y="76" font-size="7" fill="#CBD0D6" letter-spacing="1" opacity="0.55">ISSUES OPENED</text>
+    </g>
+    <g transform="translate(671, 264)">
+      <rect width="197" height="84" fill="#0A0D12"/>
+      <rect width="3" height="84" fill="#1E40AF"/>
+      <text class="m" x="20" y="26" font-size="8" font-weight="700" fill="#60A5FA" letter-spacing="2">04 · ACTIVE DAYS</text>
+      <text class="m" x="181" y="26" font-size="7.5" fill="#CBD0D6" letter-spacing="1" opacity="0.4" text-anchor="end">2026</text>
+      <text class="d" x="20" y="61" font-size="30" fill="#F0EAE1" letter-spacing="0.5">—</text>
+      <text class="m" x="20" y="76" font-size="7" fill="#CBD0D6" letter-spacing="1" opacity="0.55">DAYS WITH A CONTRIBUTION</text>
+    </g>
+  </g>
+  <text class="m" x="32" y="370" font-size="8" fill="#0A0D12" letter-spacing="1" opacity="0.5">SOURCE // GITHUB CONTRIBUTIONS API · AWAITING FIRST SYNC</text>
+  <line x1="32" y1="380" x2="868" y2="380" stroke="#0A0D12" stroke-width="0.5" opacity="0.25"/>
 </svg>

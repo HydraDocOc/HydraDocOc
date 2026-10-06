@@ -1,0 +1,57 @@
+name: Update profile
+
+# Regenerates assets/activity.svg from GitHub contribution data and commits it
+# only when the file actually changed.
+#
+# Loop safety: no trigger below can match assets/activity.svg (the only file this
+# workflow writes), pushes made with GITHUB_TOKEN never start new runs, and the
+# commit message carries [skip ci] as a belt-and-braces guard.
+#
+# Token: uses secrets.PROFILE_TOKEN (a PAT with read:user) when present, which lets
+# GitHub include private contributions you've chosen to show on your profile.
+# Otherwise it falls back to the built-in GITHUB_TOKEN, which sees public data only.
+
+on:
+  schedule:
+    - cron: "17 */6 * * *" # every 6 hours, off the top of the hour
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/generate_activity.py
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: false
+
+jobs:
+  activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Regenerate contribution matrix
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/generate_activity.py --out assets/activity.svg
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- assets/activity.svg)" ]; then
+            echo "assets/activity.svg unchanged - nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg
+          git commit -m "chore(profile): refresh contribution matrix [skip ci]"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
