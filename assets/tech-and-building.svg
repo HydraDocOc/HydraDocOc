@@ -1,113 +1,196 @@
-<svg width="900" height="360" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="390" viewBox="0 0 900 390" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <pattern id="tgrid" width="25" height="25" patternUnits="userSpaceOnUse">
-      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#BFC3C7" stroke-width="0.2" opacity="0.25"/>
+    <pattern id="tech-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#0A0D12" stroke-width="0.2" opacity="0.07"/>
     </pattern>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="360" fill="#F1EBDD"/>
-  <rect width="900" height="360" fill="url(#tgrid)"/>
+  <!-- Cream editorial background -->
+  <rect width="900" height="390" fill="#F0EAE1"/>
+  <rect width="900" height="390" fill="url(#tech-grid)"/>
 
-  <!-- Top rule -->
-  <line x1="0" y1="0" x2="900" y2="0" stroke="#080A0D" stroke-width="1.5"/>
+  <!-- Top perimeter framing -->
+  <line x1="32" y1="20" x2="868" y2="20" stroke="#0A0D12" stroke-width="1.2"/>
 
-  <!-- Section label -->
-  <text x="30" y="38" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">04  —  TECH INDEX</text>
-  <text x="30" y="60" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="24" font-weight="900" fill="#080A0D" letter-spacing="2">/// TECH INDEX</text>
-  <line x1="30" y1="68" x2="870" y2="68" stroke="#080A0D" stroke-width="0.8"/>
+  <!-- Section index tag -->
+  <text x="32" y="38" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="600" fill="#0A0D12" letter-spacing="3" opacity="0.6">INDEX // 04</text>
+  <text x="140" y="38" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#0A0D12" letter-spacing="1.5" opacity="0.4">TECHNICAL COMPENDIUM &amp; CAPABILITY MATRIX</text>
+  <text x="730" y="38" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#1E40AF" letter-spacing="1">FOUR TAXONOMIES</text>
 
-  <!-- COLUMN 01: LANGUAGES -->
-  <text x="30" y="96" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="3">LANGUAGES</text>
-  <line x1="30" y1="100" x2="190" y2="100" stroke="#315BC7" stroke-width="0.5" opacity="0.4"/>
-  <text x="30" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Python</text>
-  <text x="30" y="134" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">C++</text>
-  <text x="30" y="150" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">JavaScript</text>
-  <text x="30" y="166" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">HTML / CSS</text>
+  <!-- Section title -->
+  <text x="32" y="66"
+        font-family="'Arial Black','Impact','Helvetica Neue',sans-serif"
+        font-size="24"
+        font-weight="900"
+        fill="#0A0D12"
+        letter-spacing="1.5">/// TECHNICAL INDEX</text>
 
-  <!-- Skill bars — Languages -->
-  <rect x="30" y="178" width="130" height="2" fill="#BFC3C7" opacity="0.3"/>
-  <rect x="30" y="178" width="115" height="2" fill="#315BC7" opacity="0.7"/>
-  <text x="165" y="181" font-family="'IBM Plex Mono','Courier New',monospace" font-size="6" fill="#080A0D" opacity="0.4">Python</text>
+  <line x1="32" y1="76" x2="868" y2="76" stroke="#0A0D12" stroke-width="0.5" opacity="0.3"/>
 
-  <rect x="30" y="185" width="130" height="2" fill="#BFC3C7" opacity="0.3"/>
-  <rect x="30" y="185" width="85" height="2" fill="#315BC7" opacity="0.7"/>
-  <text x="165" y="188" font-family="'IBM Plex Mono','Courier New',monospace" font-size="6" fill="#080A0D" opacity="0.4">C++</text>
+  <!-- ===================================================================
+       FOUR-COLUMN TECHNICAL MATRIX
+       =================================================================== -->
 
-  <rect x="30" y="192" width="130" height="2" fill="#BFC3C7" opacity="0.3"/>
-  <rect x="30" y="192" width="100" height="2" fill="#315BC7" opacity="0.7"/>
-  <text x="165" y="195" font-family="'IBM Plex Mono','Courier New',monospace" font-size="6" fill="#080A0D" opacity="0.4">JS</text>
+  <!-- COLUMN 01: CORE LANGUAGES -->
+  <g transform="translate(32, 94)">
+    <text x="0" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#1E40AF" letter-spacing="2.5">01 · LANGUAGES</text>
+    <line x1="0" y1="6" x2="185" y2="6" stroke="#1E40AF" stroke-width="0.5" opacity="0.4"/>
 
-  <!-- COLUMN 02: AI / ML (verified from Aero-Velocity + gemini-pdf-chatbot) -->
-  <text x="220" y="96" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="3">AI / ML</text>
-  <line x1="220" y1="100" x2="400" y2="100" stroke="#315BC7" stroke-width="0.5" opacity="0.4"/>
-  <text x="220" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Scikit-learn</text>
-  <text x="220" y="134" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">XGBoost</text>
-  <text x="220" y="150" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">LangChain</text>
-  <text x="220" y="166" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Google Gemini</text>
-  <text x="220" y="182" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">FAISS</text>
-  <text x="220" y="198" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">OpenCV</text>
+    <g transform="translate(0, 24)" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9.5" fill="#0A0D12">
+      <text x="0" y="0" font-weight="600">Python</text>
+      <text x="130" y="0" font-size="7.5" fill="#1E40AF">PRIMARY</text>
+      <line x1="0" y1="6" x2="185" y2="6" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <!-- COLUMN 03: WEB (verified from HireHub + Aero-Velocity) -->
-  <text x="430" y="96" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="3">WEB</text>
-  <line x1="430" y1="100" x2="610" y2="100" stroke="#315BC7" stroke-width="0.5" opacity="0.4"/>
-  <text x="430" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">FastAPI</text>
-  <text x="430" y="134" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Flask</text>
-  <text x="430" y="150" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Django</text>
-  <text x="430" y="166" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">React 18</text>
-  <text x="430" y="182" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Streamlit</text>
-  <text x="430" y="198" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Tailwind CSS</text>
+      <text x="0" y="20" font-weight="600">JavaScript</text>
+      <text x="130" y="20" font-size="7.5" opacity="0.5">ES6+ / WEB</text>
+      <line x1="0" y1="26" x2="185" y2="26" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <!-- COLUMN 04: TOOLS -->
-  <text x="650" y="96" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="3">TOOLS</text>
-  <line x1="650" y1="100" x2="870" y2="100" stroke="#315BC7" stroke-width="0.5" opacity="0.4"/>
-  <text x="650" y="118" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Git / GitHub</text>
-  <text x="650" y="134" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Docker</text>
-  <text x="650" y="150" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">VS Code</text>
-  <text x="650" y="166" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Adobe Suite</text>
-  <text x="650" y="182" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">DaVinci Resolve</text>
-  <text x="650" y="198" font-family="'IBM Plex Mono','Courier New',monospace" font-size="10" fill="#080A0D" letter-spacing="1" opacity="0.85">Firebase</text>
+      <text x="0" y="40" font-weight="600">Java</text>
+      <text x="130" y="40" font-size="7.5" opacity="0.5">DSA / OOP</text>
+      <line x1="0" y1="46" x2="185" y2="46" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <!-- Column vertical dividers -->
-  <line x1="210" y1="75" x2="210" y2="215" stroke="#BFC3C7" stroke-width="0.5" opacity="0.4"/>
-  <line x1="420" y1="75" x2="420" y2="215" stroke="#BFC3C7" stroke-width="0.5" opacity="0.4"/>
-  <line x1="640" y1="75" x2="640" y2="215" stroke="#BFC3C7" stroke-width="0.5" opacity="0.4"/>
+      <text x="0" y="60" font-weight="600">C++</text>
+      <text x="130" y="60" font-size="7.5" opacity="0.5">SYSTEMS</text>
+      <line x1="0" y1="66" x2="185" y2="66" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <!-- Divider -->
-  <line x1="30" y1="228" x2="870" y2="228" stroke="#BFC3C7" stroke-width="0.5" opacity="0.4"/>
+      <text x="0" y="80" font-weight="600">HTML5 / CSS3</text>
+      <text x="130" y="80" font-size="7.5" opacity="0.5">SEMANTIC</text>
+    </g>
+  </g>
 
-  <!-- Currently Building Section -->
-  <text x="30" y="256" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">05  —  CURRENTLY BUILDING</text>
-  <text x="30" y="275" font-family="'Arial Black','Impact','Arial',sans-serif" font-size="20" font-weight="900" fill="#080A0D" letter-spacing="2">/// CURRENTLY BUILDING</text>
-  <line x1="30" y1="283" x2="870" y2="283" stroke="#BFC3C7" stroke-width="0.5" opacity="0.4"/>
+  <!-- Divider 1 -->
+  <line x1="237" y1="94" x2="237" y2="200" stroke="#0A0D12" stroke-width="0.3" opacity="0.2"/>
 
-  <!-- Status rows -->
-  <circle cx="46" cy="308" r="4" fill="#315BC7"/>
-  <text x="58" y="312" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="2">ACTIVE</text>
-  <text x="130" y="312" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="1.5" opacity="0.85">AI APPLICATIONS</text>
-  <rect x="440" y="303" width="200" height="3" fill="#BFC3C7" opacity="0.2"/>
-  <rect x="440" y="303" width="160" height="3" fill="#315BC7" opacity="0.6"/>
+  <!-- COLUMN 02: APPLIED AI & ML -->
+  <g transform="translate(252, 94)">
+    <text x="0" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#1E40AF" letter-spacing="2.5">02 · APPLIED AI / ML</text>
+    <line x1="0" y1="6" x2="185" y2="6" stroke="#1E40AF" stroke-width="0.5" opacity="0.4"/>
 
-  <circle cx="46" cy="326" r="3.5" fill="none" stroke="#080A0D" stroke-width="1"/>
-  <text x="58" y="330" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">EXPERIMENT</text>
-  <text x="130" y="330" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="1.5" opacity="0.7">COMPUTER VISION</text>
-  <rect x="440" y="321" width="200" height="3" fill="#BFC3C7" opacity="0.2"/>
-  <rect x="440" y="321" width="80" height="3" fill="#080A0D" opacity="0.4"/>
+    <g transform="translate(0, 24)" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9.5" fill="#0A0D12">
+      <text x="0" y="0" font-weight="600">LangChain</text>
+      <text x="110" y="0" font-size="7.5" fill="#1E40AF">ORCHESTRATION</text>
+      <line x1="0" y1="6" x2="185" y2="6" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <circle cx="46" cy="344" r="3.5" fill="none" stroke="#080A0D" stroke-width="1"/>
-  <text x="58" y="348" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">EXPLORING</text>
-  <text x="130" y="348" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="1.5" opacity="0.7">GENERATIVE AI</text>
-  <rect x="440" y="339" width="200" height="3" fill="#BFC3C7" opacity="0.2"/>
-  <rect x="440" y="339" width="50" height="3" fill="#080A0D" opacity="0.3"/>
+      <text x="0" y="20" font-weight="600">Google Gemini</text>
+      <text x="110" y="20" font-size="7.5" opacity="0.5">API &amp; EMBED</text>
+      <line x1="0" y1="26" x2="185" y2="26" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <circle cx="550" cy="308" r="4" fill="#315BC7"/>
-  <text x="562" y="312" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#315BC7" letter-spacing="2">ACTIVE</text>
-  <text x="634" y="312" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="1.5" opacity="0.85">CREATIVE TECHNOLOGY</text>
+      <text x="0" y="40" font-weight="600">FAISS</text>
+      <text x="110" y="40" font-size="7.5" opacity="0.5">VECTOR INDEX</text>
+      <line x1="0" y1="46" x2="185" y2="46" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <circle cx="550" cy="326" r="3.5" fill="none" stroke="#080A0D" stroke-width="1"/>
-  <text x="562" y="330" font-family="'IBM Plex Mono','Courier New',monospace" font-size="8" fill="#080A0D" letter-spacing="2" opacity="0.5">EXPLORING</text>
-  <text x="634" y="330" font-family="'IBM Plex Mono','Courier New',monospace" font-size="9" fill="#080A0D" letter-spacing="1.5" opacity="0.7">OPEN SOURCE</text>
+      <text x="0" y="60" font-weight="600">XGBoost / Scikit</text>
+      <text x="110" y="60" font-size="7.5" opacity="0.5">PREDICTIVE ML</text>
+      <line x1="0" y1="66" x2="185" y2="66" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
 
-  <!-- Bottom rule -->
-  <line x1="0" y1="358" x2="900" y2="358" stroke="#BFC3C7" stroke-width="0.5" opacity="0.3"/>
+      <text x="0" y="80" font-weight="600">OpenCV</text>
+      <text x="110" y="80" font-size="7.5" opacity="0.5">VISION MODEL</text>
+    </g>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="457" y1="94" x2="457" y2="200" stroke="#0A0D12" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- COLUMN 03: FULL-STACK & WEB -->
+  <g transform="translate(472, 94)">
+    <text x="0" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#1E40AF" letter-spacing="2.5">03 · FULL-STACK &amp; API</text>
+    <line x1="0" y1="6" x2="185" y2="6" stroke="#1E40AF" stroke-width="0.5" opacity="0.4"/>
+
+    <g transform="translate(0, 24)" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9.5" fill="#0A0D12">
+      <text x="0" y="0" font-weight="600">FastAPI</text>
+      <text x="115" y="0" font-size="7.5" fill="#1E40AF">ASYNC REST</text>
+      <line x1="0" y1="6" x2="185" y2="6" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="20" font-weight="600">React 18 / Vite</text>
+      <text x="115" y="20" font-size="7.5" opacity="0.5">CLIENT UI</text>
+      <line x1="0" y1="26" x2="185" y2="26" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="40" font-weight="600">Flask</text>
+      <text x="115" y="40" font-size="7.5" opacity="0.5">AUTH / REST</text>
+      <line x1="0" y1="46" x2="185" y2="46" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="60" font-weight="600">Django</text>
+      <text x="115" y="60" font-size="7.5" opacity="0.5">DRF / PORTAL</text>
+      <line x1="0" y1="66" x2="185" y2="66" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="80" font-weight="600">Streamlit</text>
+      <text x="115" y="80" font-size="7.5" opacity="0.5">AI INTERFACE</text>
+    </g>
+  </g>
+
+  <!-- Divider 3 -->
+  <line x1="677" y1="94" x2="677" y2="200" stroke="#0A0D12" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- COLUMN 04: INFRASTRUCTURE & CREATIVE -->
+  <g transform="translate(692, 94)">
+    <text x="0" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#1E40AF" letter-spacing="2.5">04 · TOOLS &amp; STUDIO</text>
+    <line x1="0" y1="6" x2="176" y2="6" stroke="#1E40AF" stroke-width="0.5" opacity="0.4"/>
+
+    <g transform="translate(0, 24)" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9.5" fill="#0A0D12">
+      <text x="0" y="0" font-weight="600">Docker</text>
+      <text x="100" y="0" font-size="7.5" fill="#1E40AF">CONTAINER</text>
+      <line x1="0" y1="6" x2="176" y2="6" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="20" font-weight="600">Git / GitHub</text>
+      <text x="100" y="20" font-size="7.5" opacity="0.5">VERSIONING</text>
+      <line x1="0" y1="26" x2="176" y2="26" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="40" font-weight="600">Firebase</text>
+      <text x="100" y="40" font-size="7.5" opacity="0.5">AUTH / DATA</text>
+      <line x1="0" y1="46" x2="176" y2="46" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="60" font-weight="600">DaVinci Resolve</text>
+      <text x="100" y="60" font-size="7.5" opacity="0.5">POST-PROD</text>
+      <line x1="0" y1="66" x2="176" y2="66" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <text x="0" y="80" font-weight="600">Adobe Suite</text>
+      <text x="100" y="80" font-size="7.5" opacity="0.5">VISUAL SYS</text>
+    </g>
+  </g>
+
+  <!-- Horizontal divider -->
+  <line x1="32" y1="216" x2="868" y2="216" stroke="#0A0D12" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- ===================================================================
+       LOWER SECTION: OPERATIONAL FOCUS & RESEARCH LEDGER
+       =================================================================== -->
+  <g transform="translate(32, 236)">
+    <!-- Sub-header -->
+    <text x="0" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="600" fill="#0A0D12" letter-spacing="3" opacity="0.6">INDEX // 05</text>
+    <text x="108" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#0A0D12" letter-spacing="1.5" opacity="0.4">CURRENT ENGINEERING VECTORS &amp; RESEARCH FOCUS</text>
+    <text x="736" y="0" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#1E40AF" letter-spacing="1">ACTIVE STATUS</text>
+
+    <!-- Ledger rows -->
+    <g transform="translate(0, 20)">
+      <!-- Row 1 -->
+      <circle cx="4" cy="6" r="3.5" fill="#1E40AF"/>
+      <text x="16" y="10" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#1E40AF" letter-spacing="1.5">ACTIVE</text>
+      <text x="80" y="10" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9" font-weight="600" fill="#0A0D12">RETRIEVAL-AUGMENTED GENERATION (RAG)</text>
+      <text x="440" y="10" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#0A0D12" opacity="0.7">Multi-document vector indexing, prompt engineering &amp; hallucination minimization</text>
+      <line x1="0" y1="18" x2="836" y2="18" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <!-- Row 2 -->
+      <circle cx="4" cy="30" r="3.5" fill="#1E40AF"/>
+      <text x="16" y="34" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#1E40AF" letter-spacing="1.5">ACTIVE</text>
+      <text x="80" y="34" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9" font-weight="600" fill="#0A0D12">TELEMETRY &amp; PHYSICAL SIMULATION</text>
+      <text x="440" y="34" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#0A0D12" opacity="0.7">FastF1 aerodynamic modeling, downforce/drag computation &amp; XGBoost prediction</text>
+      <line x1="0" y1="42" x2="836" y2="42" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <!-- Row 3 -->
+      <circle cx="4" cy="54" r="3.5" fill="none" stroke="#0A0D12" stroke-width="1.2"/>
+      <text x="16" y="58" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#0A0D12" letter-spacing="1.5" opacity="0.7">CURRICULUM</text>
+      <text x="100" y="58" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9" font-weight="600" fill="#0A0D12">DATA STRUCTURES &amp; ALGORITHMS</text>
+      <text x="440" y="58" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#0A0D12" opacity="0.7">62+ Java implementations: sliding window, linked lists, backtracking &amp; trees</text>
+      <line x1="0" y1="66" x2="836" y2="66" stroke="#0A0D12" stroke-width="0.2" opacity="0.15"/>
+
+      <!-- Row 4 -->
+      <circle cx="4" cy="78" r="3.5" fill="none" stroke="#0A0D12" stroke-width="1.2"/>
+      <text x="16" y="82" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" font-weight="700" fill="#0A0D12" letter-spacing="1.5" opacity="0.7">CREATIVE</text>
+      <text x="100" y="82" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="9" font-weight="600" fill="#0A0D12">CINEMATOGRAPHY &amp; EDITORIAL DESIGN</text>
+      <text x="440" y="82" font-family="'IBM Plex Mono','SF Mono',Consolas,monospace" font-size="8" fill="#0A0D12" opacity="0.7">DaVinci Resolve narrative workflows, procedural visual systems &amp; typography</text>
+    </g>
+  </g>
+
+  <!-- Bottom boundary rule -->
+  <line x1="32" y1="374" x2="868" y2="374" stroke="#0A0D12" stroke-width="0.5" opacity="0.25"/>
 </svg>

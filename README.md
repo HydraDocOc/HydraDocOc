@@ -32,32 +32,32 @@
 
 <table>
 <tr>
-<td align="center" width="225">
+<td width="220" valign="top">
 
 `01`&nbsp;&nbsp;**GEMINI PDF CHATBOT**<br/>
-<sub>`ACTIVE` · AI / RAG / DOCKER</sub><br/>
-[View Repository →](https://github.com/HydraDocOc/gemini-pdf-chatbot)
+<sub><code>SYS.01</code> · <b>ACTIVE</b> · RAG / DOCKER</sub><br/>
+<sub><a href="https://github.com/HydraDocOc/gemini-pdf-chatbot">View Source Repository →</a></sub>
 
 </td>
-<td align="center" width="225">
+<td width="220" valign="top">
 
 `02`&nbsp;&nbsp;**HIREHUB**<br/>
-<sub>`ACTIVE` · FLASK / DJANGO / WEB</sub><br/>
-[View Repository →](https://github.com/HydraDocOc/HireHub-With-Resume-Builder-using-API)
+<sub><code>SYS.02</code> · <b>ACTIVE</b> · FLASK / DJANGO</sub><br/>
+<sub><a href="https://github.com/HydraDocOc/HireHub-With-Resume-Builder-using-API">View Source Repository →</a></sub>
 
 </td>
-<td align="center" width="225">
+<td width="220" valign="top">
 
 `03`&nbsp;&nbsp;**AERO VELOCITY**<br/>
-<sub>`ACTIVE` · FASTAPI / REACT / ML</sub><br/>
-[View Repository →](https://github.com/HydraDocOc/Aero-Velocity)
+<sub><code>SYS.03</code> · <b>ACTIVE</b> · FASTAPI / REACT</sub><br/>
+<sub><a href="https://github.com/HydraDocOc/Aero-Velocity">View Source Repository →</a></sub>
 
 </td>
-<td align="center" width="225">
+<td width="220" valign="top">
 
 `04`&nbsp;&nbsp;**MERN STACK — G06**<br/>
-<sub>`IN PROGRESS` · LEARNING LOG</sub><br/>
-[View Repository →](https://github.com/HydraDocOc/MERN_STACK_G06)
+<sub><code>SYS.04</code> · <b>LOG</b> · PHASE 01 IN PROGRESS</sub><br/>
+<sub><a href="https://github.com/HydraDocOc/MERN_STACK_G06">View Source Repository →</a></sub>
 
 </td>
 </tr>
@@ -67,13 +67,17 @@
 
 <br/>
 
-### `///` VERIFIED PROJECT SPECIFICATIONS
+<div align="center">
+<sub><code>INDEX // 03.B</code>&nbsp;&nbsp;·&nbsp;&nbsp;<b>VERIFIED ARCHITECTURAL SPECIFICATIONS</b>&nbsp;&nbsp;·&nbsp;&nbsp;<code>HDL-LEDGER-2026</code></sub>
+</div>
+
+<br/>
 
 <table>
 <thead>
 <tr>
-<th align="left" width="26%">System &amp; Repository</th>
-<th align="left" width="74%">Verified Architecture &amp; Deliverables</th>
+<th align="left" width="28%">SYSTEM / REPOSITORY</th>
+<th align="left" width="72%">VERIFIED ARCHITECTURE &amp; DELIVERABLES</th>
 </tr>
 </thead>
 <tbody>
