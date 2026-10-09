@@ -73,11 +73,11 @@
   </g>
   <g id="m10">
     <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5575;1" dur="1.13s" begin="0s"/>
-    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M658 166.9h12v12h-12zM658 182.2h12v12h-12zM658 197.4h12v12h-12zM673.2 106h12v12h-12zM673.2 166.9h12v12h-12z"/>
+    <path fill="#F0EAE1" stroke="#0A0D12" stroke-opacity="0.22" stroke-width="0.5" d="M658 166.9h12v12h-12zM658 182.2h12v12h-12zM658 197.4h12v12h-12zM673.2 106h12v12h-12zM673.2 166.9h12v12h-12zM673.2 182.2h12v12h-12z"/>
     <path fill="#646C79" d="M673.2 151.7h12v12h-12z"/>
     <path fill="#1E40AF" d="M673.2 136.5h12v12h-12z"/>
     <path fill="#1E40AF" d="M673.2 121.2h12v12h-12z"/>
-    <path fill="none" stroke="#0A0D12" stroke-opacity="0.18" stroke-width="0.5" stroke-dasharray="1.5 1.5" d="M673.2 182.2h12v12h-12zM673.2 197.4h12v12h-12zM688.4 106h12v12h-12zM688.4 121.2h12v12h-12zM688.4 136.5h12v12h-12zM688.4 151.7h12v12h-12zM688.4 166.9h12v12h-12zM688.4 182.2h12v12h-12zM688.4 197.4h12v12h-12zM703.7 106h12v12h-12zM703.7 121.2h12v12h-12zM703.7 136.5h12v12h-12zM703.7 151.7h12v12h-12zM703.7 166.9h12v12h-12zM703.7 182.2h12v12h-12zM703.7 197.4h12v12h-12zM718.9 106h12v12h-12zM718.9 121.2h12v12h-12zM718.9 136.5h12v12h-12zM718.9 151.7h12v12h-12zM718.9 166.9h12v12h-12zM718.9 182.2h12v12h-12zM718.9 197.4h12v12h-12z"/>
+    <path fill="none" stroke="#0A0D12" stroke-opacity="0.18" stroke-width="0.5" stroke-dasharray="1.5 1.5" d="M673.2 197.4h12v12h-12zM688.4 106h12v12h-12zM688.4 121.2h12v12h-12zM688.4 136.5h12v12h-12zM688.4 151.7h12v12h-12zM688.4 166.9h12v12h-12zM688.4 182.2h12v12h-12zM688.4 197.4h12v12h-12zM703.7 106h12v12h-12zM703.7 121.2h12v12h-12zM703.7 136.5h12v12h-12zM703.7 151.7h12v12h-12zM703.7 166.9h12v12h-12zM703.7 182.2h12v12h-12zM703.7 197.4h12v12h-12zM718.9 106h12v12h-12zM718.9 121.2h12v12h-12zM718.9 136.5h12v12h-12zM718.9 151.7h12v12h-12zM718.9 166.9h12v12h-12zM718.9 182.2h12v12h-12zM718.9 197.4h12v12h-12z"/>
     <path fill="#F0EAE1" d="M677.7 125.7h3v3h-3z"/>
   </g>
   <g id="m11">
